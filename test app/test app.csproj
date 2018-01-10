@@ -82,5 +82,8 @@
   <ItemGroup>
     <None Include="Resources\learning-the-grid-method.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link_sprite_sheet_by_tiozacdasgalaxias-dayh0s6kopie.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

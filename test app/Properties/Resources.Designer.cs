@@ -69,5 +69,15 @@ namespace test_app.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap link_sprite_sheet_by_tiozacdasgalaxias_dayh0s6kopie {
+            get {
+                object obj = ResourceManager.GetObject("link_sprite_sheet_by_tiozacdasgalaxias-dayh0s6kopie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
