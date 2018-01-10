@@ -12,52 +12,204 @@ namespace test_app
 {
     public partial class Form1 : Form
     {
-        int position = 1;
+        int xpos = -1;
+        int ypos = 1;
+        List<PictureBox> boxlist = new List<PictureBox>();
+
         public Form1()
         {
             InitializeComponent();
+            link();      
 
-            pictureBox1.Visible = true;
-            pictureBox2.Visible = false;
-            pictureBox3.Visible = false;
-            pictureBox4.Visible = false;
-            pictureBox5.Visible = false;
-            pictureBox6.Visible = false;
-            pictureBox7.Visible = false;
-            pictureBox8.Visible = false;
-            pictureBox9.Visible = false;
-        }
-
-        private void down_Click(object sender, EventArgs e)
-        {
-            position++;
-            coordinate();
         }
 
         private void up_Click(object sender, EventArgs e)
         {
-            position--;
-            coordinate();
-            if (position == 0)
-            {
-                position = 1;
-            }
+            ypos++;
+            range();
+            link();
+            
+
         }
-        private void coordinate()
+
+        private void down_Click(object sender, EventArgs e)
         {
-            if(position == 2)
-            {
-                pictureBox1.Visible = false;
-                pictureBox2.Visible = true;
-            }
+            ypos--;
+            range();
+            link();
+            
+        }
 
-            if(position ==1)
+        private void left_Click(object sender, EventArgs e)
+        {
+            xpos--;
+            range();
+            link();
+            
+        }
+
+        private void right_Click(object sender, EventArgs e)
+        {
+            xpos++;
+            range();
+            link();
+            
+        }
+        public void range()
+        {
+            if (xpos > 1)
             {
-                pictureBox1.Visible = true;
-                pictureBox2.Visible = false;
+                xpos = -1;
+                ypos = 1;
+            }
+            if (xpos < -1)
+            {
+                xpos = -1;
+                ypos = 1;
+            }
+            if (ypos > 1)
+            {
+                ypos = 1;
+                xpos = -1;
+            }
+            if (ypos < -1)
+            {
+                ypos = 1;
+                xpos = -1;
             }
         }
 
-        
+        public void link()
+        {
+            if(xpos == 0 && ypos == 0)
+            {
+                pictureBox1.Image = test_app.Properties.Resources.link;
+
+                if (boxlist.Count == 0)
+                {
+                    boxlist.Add(pictureBox1);
+                }
+                else
+                {
+                    boxlist[0].Image = null;
+                    boxlist.Remove(boxlist[0]);
+                    boxlist.Add(pictureBox1);
+                }
+            }
+            if (xpos == 1 && ypos == 0)
+            {
+                pictureBox9.Image = test_app.Properties.Resources.link;
+                if (boxlist.Count == 0)
+                {
+                    boxlist.Add(pictureBox9);
+                }
+                else
+                {
+                    boxlist[0].Image = null;
+                    boxlist.Remove(boxlist[0]);
+                    boxlist.Add(pictureBox9);
+                }
+            }
+            if (xpos == 1 && ypos == 1)
+            {
+                pictureBox6.Image = test_app.Properties.Resources.link;
+                if (boxlist.Count == 0)
+                {
+                    boxlist.Add(pictureBox6);
+                }
+                else
+                {
+                    boxlist[0].Image = null;
+                    boxlist.Remove(boxlist[0]);
+                    boxlist.Add(pictureBox6);
+                }
+            }
+            if (xpos == 0 && ypos == 1)
+            {
+                pictureBox7.Image = test_app.Properties.Resources.link;
+                if (boxlist.Count == 0)
+                {
+                    boxlist.Add(pictureBox7);
+                }
+                else
+                {
+                    boxlist[0].Image = null;
+                    boxlist.Remove(boxlist[0]);
+                    boxlist.Add(pictureBox7);
+                }
+            }
+            if (xpos == -1 && ypos == 0)
+            {
+                pictureBox4.Image = test_app.Properties.Resources.link;
+                if (boxlist.Count == 0)
+                {
+                    boxlist.Add(pictureBox4);
+                }
+                else
+                {
+                    boxlist[0].Image = null;
+                    boxlist.Remove(boxlist[0]);
+                    boxlist.Add(pictureBox4);
+                }
+            }
+            if (xpos == 0 && ypos == -1)
+            {
+                pictureBox2.Image = test_app.Properties.Resources.link;
+                if (boxlist.Count == 0)
+                {
+                    boxlist.Add( pictureBox2);
+                }
+                else
+                {
+                    boxlist[0].Image = null;
+                    boxlist.Remove(boxlist[0]);
+                    boxlist.Add(pictureBox2);
+                }
+            }
+            if (xpos == -1 && ypos == -1)
+            {
+                pictureBox5.Image = test_app.Properties.Resources.link;
+                if (boxlist.Count == 0)
+                {
+                    boxlist.Add(pictureBox5);
+                }
+                else
+                {
+                    boxlist[0].Image = null;
+                    boxlist.Remove(boxlist[0]);
+                    boxlist.Add(pictureBox5);
+                }
+            }
+            if (xpos == 1 && ypos == -1)
+            {
+                pictureBox3.Image = test_app.Properties.Resources.link;
+                if (boxlist.Count == 0)
+                {
+                    boxlist.Add(pictureBox3);
+                }
+                else
+                {
+                    boxlist[0].Image = null;
+                    boxlist.Remove(boxlist[0]);
+                    boxlist.Add(pictureBox3);
+                }
+            }
+            if (xpos == -1 && ypos == 1)
+            {
+                pictureBox8.Image = test_app.Properties.Resources.link;
+                if (boxlist.Count == 0)
+                {
+                    boxlist.Add(pictureBox8);
+                }
+                else
+                {
+                    boxlist[0].Image = null;
+                    boxlist.Remove(boxlist[0]);
+                    boxlist.Add(pictureBox8);
+                }
+            }
+
+
+        }
     }
 }
