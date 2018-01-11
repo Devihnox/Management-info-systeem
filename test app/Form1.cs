@@ -84,6 +84,7 @@ namespace test_app
             if(xpos == 0 && ypos == 0)
             {
                 pictureBox1.Image = test_app.Properties.Resources.link;
+                this.pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
 
                 if (boxlist.Count == 0)
                 {
@@ -99,6 +100,7 @@ namespace test_app
             if (xpos == 1 && ypos == 0)
             {
                 pictureBox9.Image = test_app.Properties.Resources.link;
+                this.pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
                 if (boxlist.Count == 0)
                 {
                     boxlist.Add(pictureBox9);
@@ -113,6 +115,7 @@ namespace test_app
             if (xpos == 1 && ypos == 1)
             {
                 pictureBox6.Image = test_app.Properties.Resources.link;
+                this.pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
                 if (boxlist.Count == 0)
                 {
                     boxlist.Add(pictureBox6);
@@ -127,6 +130,7 @@ namespace test_app
             if (xpos == 0 && ypos == 1)
             {
                 pictureBox7.Image = test_app.Properties.Resources.link;
+                this.pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
                 if (boxlist.Count == 0)
                 {
                     boxlist.Add(pictureBox7);
@@ -141,6 +145,7 @@ namespace test_app
             if (xpos == -1 && ypos == 0)
             {
                 pictureBox4.Image = test_app.Properties.Resources.link;
+                this.pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
                 if (boxlist.Count == 0)
                 {
                     boxlist.Add(pictureBox4);
@@ -155,6 +160,7 @@ namespace test_app
             if (xpos == 0 && ypos == -1)
             {
                 pictureBox2.Image = test_app.Properties.Resources.link;
+                this.pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
                 if (boxlist.Count == 0)
                 {
                     boxlist.Add( pictureBox2);
@@ -169,6 +175,7 @@ namespace test_app
             if (xpos == -1 && ypos == -1)
             {
                 pictureBox5.Image = test_app.Properties.Resources.link;
+                this.pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
                 if (boxlist.Count == 0)
                 {
                     boxlist.Add(pictureBox5);
@@ -183,6 +190,7 @@ namespace test_app
             if (xpos == 1 && ypos == -1)
             {
                 pictureBox3.Image = test_app.Properties.Resources.link;
+                this.pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
                 if (boxlist.Count == 0)
                 {
                     boxlist.Add(pictureBox3);
@@ -197,6 +205,7 @@ namespace test_app
             if (xpos == -1 && ypos == 1)
             {
                 pictureBox8.Image = test_app.Properties.Resources.link;
+                this.pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
                 if (boxlist.Count == 0)
                 {
                     boxlist.Add(pictureBox8);
