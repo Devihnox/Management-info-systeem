@@ -60,7 +60,6 @@
             // 
 <<<<<<< HEAD
             this.panel1.BackgroundImage = global::test_app.Properties.Resources.grid_12x12_Hersteld;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.axWindowsMediaPlayer1);
             this.panel1.Controls.Add(this.left);
             this.panel1.Controls.Add(this.right);
@@ -89,7 +88,7 @@
             // axWindowsMediaPlayer1
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(850, 161);
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(907, 35);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(75, 23);

@@ -21,10 +21,16 @@ namespace test_app
             InitializeComponent();
 <<<<<<< HEAD
             link();
+<<<<<<< HEAD
 =======
             link();      
 
 >>>>>>> parent of ad2a993... Merge branch 'master' of https://github.com/Devihnox/Management-info-systeem
+=======
+            axWindowsMediaPlayer1.URL = "stormy";
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+
+>>>>>>> parent of b80b9fd... muziek update
         }
 
         private void up_Click(object sender, EventArgs e)

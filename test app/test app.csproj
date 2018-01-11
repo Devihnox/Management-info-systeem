@@ -85,7 +85,6 @@
 <<<<<<< HEAD
   <ItemGroup>
     <Content Include="Resources\grid 12x12-Hersteld.png" />
-    <Content Include="Resources\stormy.wav" />
     <None Include="Resources\grid 12x12-Hersteld1.png" />
   </ItemGroup>
   <ItemGroup>
