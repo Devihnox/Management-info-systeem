@@ -63,6 +63,16 @@ namespace test_app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap grid_12x12_Hersteld {
+            get {
+                object obj = ResourceManager.GetObject("grid 12x12-Hersteld", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap learning_the_grid_method {
             get {
                 object obj = ResourceManager.GetObject("learning-the-grid-method", resourceCulture);

@@ -19,7 +19,9 @@ namespace test_app
         public Form1()
         {
             InitializeComponent();
-            link();      
+            link();
+            axWindowsMediaPlayer1.URL = "stormy";
+            axWindowsMediaPlayer1.Ctlcontrols.play();
 
         }
 
@@ -217,8 +219,6 @@ namespace test_app
                     boxlist.Add(pictureBox8);
                 }
             }
-
-
         }
     }
 }
