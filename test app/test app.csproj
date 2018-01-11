@@ -82,7 +82,6 @@
   <ItemGroup>
     <None Include="Resources\learning-the-grid-method.jpg" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <Content Include="Resources\grid 12x12-Hersteld.png" />
     <None Include="Resources\grid 12x12-Hersteld1.png" />
@@ -106,7 +105,5 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-=======
->>>>>>> parent of ad2a993... Merge branch 'master' of https://github.com/Devihnox/Management-info-systeem
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
