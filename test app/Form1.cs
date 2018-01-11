@@ -12,22 +12,29 @@ namespace test_app
 {
     public partial class Form1 : Form
     {
-        int xpos = -1;
-        int ypos = 1;
-        List<PictureBox> boxlist = new List<PictureBox>();
 
+
+        List<PictureBox> list = Position.boxlist;
+        public static int ypos = 1;
+        public static int xpos = -1;
+        
         public Form1()
         {
             InitializeComponent();
-            link();   
+            foreach(PictureBox p in panel1.Controls)
+            {
+                list.Add(p);
+            }
+            Link conlink = new Link();
+
         }
 
         private void up_Click(object sender, EventArgs e)
         {
             ypos++;
             range();
-            link();
-            
+            Link conlink = new Link();
+
 
         }
 
@@ -35,25 +42,27 @@ namespace test_app
         {
             ypos--;
             range();
-            link();
-            
+            Link conlink = new Link();
+
         }
 
         private void left_Click(object sender, EventArgs e)
         {
             xpos--;
             range();
-            link();
-            
+            Link conlink = new Link();
+
         }
 
         private void right_Click(object sender, EventArgs e)
         {
             xpos++;
             range();
-            link();
-            
+            Link conlink = new Link();
+
         }
+
+
         public void range()
         {
             if (xpos > 1)
@@ -76,10 +85,6 @@ namespace test_app
                 ypos = 1;
                 xpos = -1;
             }
-        }
-
-        
-
         }
     }
 }
