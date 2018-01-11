@@ -19,7 +19,12 @@ namespace test_app
         public Form1()
         {
             InitializeComponent();
+<<<<<<< HEAD
             link();
+=======
+            link();      
+
+>>>>>>> parent of ad2a993... Merge branch 'master' of https://github.com/Devihnox/Management-info-systeem
         }
 
         private void up_Click(object sender, EventArgs e)
@@ -216,6 +221,8 @@ namespace test_app
                     boxlist.Add(pictureBox8);
                 }
             }
+
+
         }
     }
 }
