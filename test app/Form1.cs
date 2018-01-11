@@ -20,9 +20,6 @@ namespace test_app
         {
             InitializeComponent();
             link();
-            axWindowsMediaPlayer1.URL = "stormy";
-            axWindowsMediaPlayer1.Ctlcontrols.play();
-
         }
 
         private void up_Click(object sender, EventArgs e)
