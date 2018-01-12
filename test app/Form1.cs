@@ -14,18 +14,15 @@ namespace test_app
     {
 
 
-        List<PictureBox> list = Position.boxlist;
+
         public static int ypos = 1;
         public static int xpos = -1;
-        
+
         public Form1()
         {
             InitializeComponent();
-            foreach(PictureBox p in panel1.Controls)
-            {
-                list.Add(p);
-            }
-            Link conlink = new Link();
+
+            move();
 
         }
 
@@ -33,8 +30,7 @@ namespace test_app
         {
             ypos++;
             range();
-            Link conlink = new Link();
-
+            move();
 
         }
 
@@ -42,7 +38,8 @@ namespace test_app
         {
             ypos--;
             range();
-            Link conlink = new Link();
+            move();
+
 
         }
 
@@ -50,7 +47,7 @@ namespace test_app
         {
             xpos--;
             range();
-            Link conlink = new Link();
+            move();
 
         }
 
@@ -58,7 +55,8 @@ namespace test_app
         {
             xpos++;
             range();
-            Link conlink = new Link();
+            move();
+
 
         }
 
@@ -85,6 +83,15 @@ namespace test_app
                 ypos = 1;
                 xpos = -1;
             }
+        }
+
+        private void move()
+        {
+            foreach(PictureBox p in panel1.Controls)
+            {
+                p.Image = null;
+            }
+            Link conlink = new Link(pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6, pictureBox7, pictureBox8, pictureBox9);
         }
     }
 }

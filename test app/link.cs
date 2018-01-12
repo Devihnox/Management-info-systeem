@@ -14,150 +14,65 @@ namespace test_app
 
         int xpos = Form1.xpos;
         int ypos = Form1.ypos;
+        public static int start = 0;
         List<PictureBox> list = Position.boxlist;
+        public PictureBox Pendingimage;
 
-        public Link()
+        public Link(PictureBox box1, PictureBox box2, PictureBox box3, PictureBox box4, PictureBox box5, PictureBox box6, PictureBox box7, PictureBox box8, PictureBox box9)
         {
 
             List<PictureBox> boxlist = new List<PictureBox>();
             if (xpos == 0 && ypos == 0)
             {
-                list[0].Image = test_app.Properties.Resources.link;
-                this.list[0].SizeMode = PictureBoxSizeMode.Zoom;
+                box1.Image = test_app.Properties.Resources.link;
+                box1.SizeMode = PictureBoxSizeMode.Zoom;
 
-                if (boxlist.Count == 0)
-                {
-                    boxlist.Add(list[0]);
-                }
-                else
-                {
-                    boxlist[0].Image = null;
-                    boxlist.Remove(boxlist[0]);
-                    boxlist.Add(list[0]);
-                }
             }
             if (xpos == 1 && ypos == 0)
             {
-                list[8].Image = test_app.Properties.Resources.link;
-                this.list[8].SizeMode = PictureBoxSizeMode.Zoom;
-                if (boxlist.Count == 0)
-                {
-                    boxlist.Add(list[8]);
-                }
-                else
-                {
-                    boxlist[0].Image = null;
-                    boxlist.Remove(boxlist[0]);
-                    boxlist.Add(list[8]);
-                }
+                box9.Image = test_app.Properties.Resources.link;
+                box9.SizeMode = PictureBoxSizeMode.Zoom;
             }
             if (xpos == 1 && ypos == 1)
             {
-                list[5].Image = test_app.Properties.Resources.link;
-                this.list[5].SizeMode = PictureBoxSizeMode.Zoom;
-                if (boxlist.Count == 0)
-                {
-                    boxlist.Add(list[5]);
-                }
-                else
-                {
-                    boxlist[0].Image = null;
-                    boxlist.Remove(boxlist[0]);
-                    boxlist.Add(list[5]);
-                }
+                box6.Image = test_app.Properties.Resources.link;
+                box6.SizeMode = PictureBoxSizeMode.Zoom;
+
             }
             if (xpos == 0 && ypos == 1)
             {
-                list[6].Image = test_app.Properties.Resources.link;
-                this.list[6].SizeMode = PictureBoxSizeMode.Zoom;
-                if (boxlist.Count == 0)
-                {
-                    boxlist.Add(list[6]);
-                }
-                else
-                {
-                    boxlist[0].Image = null;
-                    boxlist.Remove(boxlist[0]);
-                    boxlist.Add(list[6]);
-                }
+                box7.Image = test_app.Properties.Resources.link;
+                box7.SizeMode = PictureBoxSizeMode.Zoom;
             }
             if (xpos == -1 && ypos == 0)
             {
-                list[3].Image = test_app.Properties.Resources.link;
-                this.list[3].SizeMode = PictureBoxSizeMode.Zoom;
-                if (boxlist.Count == 0)
-                {
-                    boxlist.Add(list[3]);
-                }
-                else
-                {
-                    boxlist[0].Image = null;
-                    boxlist.Remove(boxlist[0]);
-                    boxlist.Add(list[3]);
-                }
+                box4.Image = test_app.Properties.Resources.link;
+                box4.SizeMode = PictureBoxSizeMode.Zoom;
             }
-            if (xpos == 0 && ypos == -1)
-            {
-                list[1].Image = test_app.Properties.Resources.link;
-                this.list[1].SizeMode = PictureBoxSizeMode.Zoom;
-                if (boxlist.Count == 0)
-                {
-                    boxlist.Add(list[1]);
-                }
-                else
-                {
-                    boxlist[0].Image = null;
-                    boxlist.Remove(boxlist[0]);
-                    boxlist.Add(list[1]);
-                }
-            }
-            if (xpos == -1 && ypos == -1)
-            {
-                list[4].Image = test_app.Properties.Resources.link;
-                this.list[4].SizeMode = PictureBoxSizeMode.Zoom;
-                if (boxlist.Count == 0)
-                {
-                    boxlist.Add(list[4]);
-                }
-                else
-                {
-                    boxlist[0].Image = null;
-                    boxlist.Remove(boxlist[0]);
-                    boxlist.Add(list[4]);
-                }
-            }
-            if (xpos == 1 && ypos == -1)
-            {
-                list[2].Image = test_app.Properties.Resources.link;
-                this.list[2].SizeMode = PictureBoxSizeMode.Zoom;
-                if (boxlist.Count == 0)
-                {
-                    boxlist.Add(list[2]);
-                }
-                else
-                {
-                    boxlist[0].Image = null;
-                    boxlist.Remove(boxlist[0]);
-                    boxlist.Add(list[2]);
-                }
-            }
-            if (xpos == -1 && ypos == 1)
-            {
-                list[7].Image = test_app.Properties.Resources.link;
-                this.list[7].SizeMode = PictureBoxSizeMode.Zoom;
-                if (boxlist.Count == 0)
-                {
-                    boxlist.Add(list[7]);
-                }
-                else
-                {
 
-                    boxlist[0].Image = null;
-                    boxlist.Remove(boxlist[0]);
-                    boxlist.Add(list[7]);
+                if (xpos == 0 && ypos == -1)
+                {
+                    box2.Image = test_app.Properties.Resources.link;
+                    box2.SizeMode = PictureBoxSizeMode.Zoom;
+
+                }
+                if (xpos == -1 && ypos == -1)
+                {
+                    box5.Image = test_app.Properties.Resources.link;
+                    box5.SizeMode = PictureBoxSizeMode.Zoom;
+
+                }
+                if (xpos == 1 && ypos == -1)
+                {
+                    box3.Image = test_app.Properties.Resources.link;
+                    box3.SizeMode = PictureBoxSizeMode.Zoom;
+
+                }
+                if (xpos == -1 && ypos == 1)
+                {
+                    box8.Image = test_app.Properties.Resources.link;
+                    box8.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
         }
     }
-}
-
