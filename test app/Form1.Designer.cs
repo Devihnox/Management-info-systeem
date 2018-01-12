@@ -45,6 +45,7 @@
             this.up = new System.Windows.Forms.Button();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.reset = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -210,11 +211,22 @@
             this.pictureBox10.TabIndex = 17;
             this.pictureBox10.TabStop = false;
             // 
+            // reset
+            // 
+            this.reset.Location = new System.Drawing.Point(1361, 210);
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(186, 97);
+            this.reset.TabIndex = 18;
+            this.reset.Text = "reset";
+            this.reset.UseVisualStyleBackColor = true;
+            this.reset.Click += new System.EventHandler(this.reset_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1444, 856);
+            this.ClientSize = new System.Drawing.Size(1879, 1055);
+            this.Controls.Add(this.reset);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.up);
             this.Controls.Add(this.down);
@@ -258,6 +270,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button reset;
     }
 }
 

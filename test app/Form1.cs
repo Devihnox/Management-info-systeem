@@ -93,5 +93,12 @@ namespace test_app
             }
             Link conlink = new Link(pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6, pictureBox7, pictureBox8, pictureBox9);
         }
+
+        private void reset_Click(object sender, EventArgs e)
+        {
+            xpos = -1;
+            ypos = 1;
+            move();
+        }
     }
 }
