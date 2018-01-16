@@ -85,6 +85,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download.png" />
+    <None Include="Resources\arrow right.png" />
+    <None Include="Resources\arrow right1.png" />
+    <None Include="Resources\arrow left.png" />
+    <None Include="Resources\arrow down.png" />
+    <None Include="Resources\arrow up.png" />
+    <None Include="Resources\9318eb1afd34703.png" />
+    <None Include="Resources\0a8a31a07ea245d.png" />
     <Content Include="Resources\grid 12x12-Hersteld.png" />
     <None Include="Resources\upbutton.png" />
     <None Include="Resources\rightbutton.png" />
