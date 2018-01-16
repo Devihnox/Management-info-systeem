@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace test_app
 {
@@ -14,10 +15,7 @@ namespace test_app
     {
 
         List<PictureBox> list = new List<PictureBox>();
-        Bitmap rechts = test_app.Properties.Resources.rightbutton;
-        Bitmap links = test_app.Properties.Resources.liftbutton;
-        Bitmap upbut = test_app.Properties.Resources.upbutton;
-        Bitmap downbut = test_app.Properties.Resources.download;
+     
 
         public static int ypos = 1;
         public static int xpos = -1;
@@ -25,13 +23,13 @@ namespace test_app
         public Form1()
         {
             InitializeComponent();
-            
-        
-        
-            move();
-        }   
 
-           
+
+
+            move();
+        }
+
+
 
         private void up_Click(object sender, EventArgs e)
         {
@@ -103,7 +101,7 @@ namespace test_app
 
         private void reset_Click(object sender, EventArgs e)
         {
-            foreach(PictureBox p in panel2.Controls)
+            foreach (PictureBox p in panel2.Controls)
             {
                 p.Image = null;
             }
@@ -117,7 +115,23 @@ namespace test_app
             PictureBox pb = (PictureBox)sender;
             pb.DoDragDrop(pb.Image, DragDropEffects.Copy);
         }
+        private void upbox_MouseDown(object sender, MouseEventArgs e)
+        {
+            PictureBox pb = (PictureBox)sender;
+            pb.DoDragDrop(pb.Image, DragDropEffects.Copy);
+        }
 
+        private void downbox_MouseDown(object sender, MouseEventArgs e)
+        {
+            PictureBox pb = (PictureBox)sender;
+            pb.DoDragDrop(pb.Image, DragDropEffects.Copy);
+        }
+
+        private void leftbox_MouseDown(object sender, MouseEventArgs e)
+        {
+            PictureBox pb = (PictureBox)sender;
+            pb.DoDragDrop(pb.Image, DragDropEffects.Copy);
+        }
         private void rightbox_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(typeof(Bitmap)))
@@ -144,66 +158,77 @@ namespace test_app
             }
             panel2.AllowDrop = true;
 
-            upbox.MouseDown += new MouseEventHandler(rightbox_MouseDown);
-            downbox.MouseDown += new MouseEventHandler(rightbox_MouseDown);
-            leftbox.MouseDown += new MouseEventHandler(rightbox_MouseDown);
             panel2.DragEnter += new DragEventHandler(rightbox_DragEnter);
         }
 
         private void panel2_DragDrop(object sender, DragEventArgs e)
-        { 
-            for(int i = 0; i < 5; i++)
+        {
+            for (int i = 0; i < 5; i++)
             {
-                if(list[i].Image == null)
+                if (list[i].Image == null)
                 {
                     list[i].Image = (Bitmap)e.Data.GetData(typeof(Bitmap));
                     break;
                 }
-                
+
             }
         }
 
-        private void start_Click(object sender, EventArgs e)
+
+
+        private void pictureBox10_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i <5; i++)
+            for (int i = 0; i < 5; i++)
             {
-                Bitmap test = (Bitmap)list[i].Image;
-                if(test == null)
+
+                if (list[i] == null)
                 {
                     break;
                 }
                 
+                
                 else
                 {
-                    if(test == rechts)
+                    if (list[i].Image == rightbox.Image)
                     {
                         xpos++;
-                        timer1.Start();
+                        Thread.Sleep(300);
                     }
-                    if(test == links)
+                    if (list[i].Image == leftbox.Image)
                     {
                         xpos--;
-                        timer1.Start();
+                        Thread.Sleep(300);
                     }
-                    if(test == upbut)
+                    if (list[i].Image == upbox.Image)
                     {
                         ypos++;
-                        timer1.Start();
+                        Thread.Sleep(300);
                     }
-                    if(test == downbut)
+                    if (list[i].Image == downbox.Image)
                     {
                         ypos--;
-                        timer1.Start();
+                        Thread.Sleep(300);
+
                     }
                 }
+                move();
+
+
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void reset_button_Click(object sender, EventArgs e)
         {
+            foreach (PictureBox p in panel2.Controls)
+            {
+                p.Image = null;
+            }
+            xpos = -1;
+            ypos = 1;
             move();
-            timer1.Stop();
         }
+
+
     }
 }
 
