@@ -14,7 +14,10 @@ namespace test_app
     {
 
         List<PictureBox> list = new List<PictureBox>();
-
+        Bitmap rechts = test_app.Properties.Resources.rightbutton;
+        Bitmap links = test_app.Properties.Resources.liftbutton;
+        Bitmap upbut = test_app.Properties.Resources.upbutton;
+        Bitmap downbut = test_app.Properties.Resources.download;
 
         public static int ypos = 1;
         public static int xpos = -1;
@@ -100,6 +103,10 @@ namespace test_app
 
         private void reset_Click(object sender, EventArgs e)
         {
+            foreach(PictureBox p in panel2.Controls)
+            {
+                p.Image = null;
+            }
             xpos = -1;
             ypos = 1;
             move();
@@ -135,14 +142,11 @@ namespace test_app
                     list.Add((PictureBox)Ray[0]);
                 }
             }
-
-            rightbox.AllowDrop = true;
             panel2.AllowDrop = true;
 
-
-            leftbox.MouseDown += new MouseEventHandler(rightbox_MouseDown);
             upbox.MouseDown += new MouseEventHandler(rightbox_MouseDown);
             downbox.MouseDown += new MouseEventHandler(rightbox_MouseDown);
+            leftbox.MouseDown += new MouseEventHandler(rightbox_MouseDown);
             panel2.DragEnter += new DragEventHandler(rightbox_DragEnter);
         }
 
@@ -159,6 +163,47 @@ namespace test_app
             }
         }
 
+        private void start_Click(object sender, EventArgs e)
+        {
+            for(int i = 0; i <5; i++)
+            {
+                Bitmap test = (Bitmap)list[i].Image;
+                if(test == null)
+                {
+                    break;
+                }
+                
+                else
+                {
+                    if(test == rechts)
+                    {
+                        xpos++;
+                        timer1.Start();
+                    }
+                    if(test == links)
+                    {
+                        xpos--;
+                        timer1.Start();
+                    }
+                    if(test == upbut)
+                    {
+                        ypos++;
+                        timer1.Start();
+                    }
+                    if(test == downbut)
+                    {
+                        ypos--;
+                        timer1.Start();
+                    }
+                }
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            move();
+            timer1.Stop();
+        }
     }
 }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.left = new System.Windows.Forms.Button();
             this.right = new System.Windows.Forms.Button();
             this.down = new System.Windows.Forms.Button();
@@ -54,6 +55,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.start = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.box1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box0)).BeginInit();
@@ -339,11 +342,26 @@
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
             // 
+            // start
+            // 
+            this.start.Location = new System.Drawing.Point(453, 601);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(222, 119);
+            this.start.TabIndex = 24;
+            this.start.Text = "start";
+            this.start.UseVisualStyleBackColor = true;
+            this.start.Click += new System.EventHandler(this.start_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1879, 1055);
+            this.Controls.Add(this.start);
             this.Controls.Add(this.rightbox);
             this.Controls.Add(this.leftbox);
             this.Controls.Add(this.downbox);
@@ -413,6 +431,8 @@
         private System.Windows.Forms.PictureBox box3;
         private System.Windows.Forms.PictureBox box2;
         private System.Windows.Forms.PictureBox box1;
+        private System.Windows.Forms.Button start;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
