@@ -13,6 +13,7 @@ namespace test_app
     public partial class Form1 : Form
     {
 
+        List<PictureBox> list = new List<PictureBox>();
 
 
         public static int ypos = 1;
@@ -21,10 +22,13 @@ namespace test_app
         public Form1()
         {
             InitializeComponent();
-
+            
+        
+        
             move();
+        }   
 
-        }
+           
 
         private void up_Click(object sender, EventArgs e)
         {
@@ -87,7 +91,7 @@ namespace test_app
 
         private void move()
         {
-            foreach(PictureBox p in panel1.Controls)
+            foreach (PictureBox p in panel1.Controls)
             {
                 p.Image = null;
             }
@@ -100,5 +104,61 @@ namespace test_app
             ypos = 1;
             move();
         }
+
+        private void rightbox_MouseDown(object sender, MouseEventArgs e)
+        {
+            PictureBox pb = (PictureBox)sender;
+            pb.DoDragDrop(pb.Image, DragDropEffects.Copy);
+        }
+
+        private void rightbox_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(typeof(Bitmap)))
+            {
+                e.Effect = DragDropEffects.Copy;
+            }
+            else
+            {
+                e.Effect = DragDropEffects.None;
+            }
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Control[] Ray;
+            for (int i = 0; i < 5; i++)
+            {
+                Ray = this.Controls.Find("Box" + i.ToString(), true);
+                if (Ray.Length > 0 && Ray[0] is PictureBox)
+                {
+                    list.Add((PictureBox)Ray[0]);
+                }
+            }
+
+            rightbox.AllowDrop = true;
+            panel2.AllowDrop = true;
+
+
+            leftbox.MouseDown += new MouseEventHandler(rightbox_MouseDown);
+            upbox.MouseDown += new MouseEventHandler(rightbox_MouseDown);
+            downbox.MouseDown += new MouseEventHandler(rightbox_MouseDown);
+            panel2.DragEnter += new DragEventHandler(rightbox_DragEnter);
+        }
+
+        private void panel2_DragDrop(object sender, DragEventArgs e)
+        { 
+            for(int i = 0; i < 5; i++)
+            {
+                if(list[i].Image == null)
+                {
+                    list[i].Image = (Bitmap)e.Data.GetData(typeof(Bitmap));
+                    break;
+                }
+                
+            }
+        }
+
     }
 }
+

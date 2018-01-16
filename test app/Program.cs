@@ -6,11 +6,7 @@ using System.Windows.Forms;
 
 namespace test_app
 {
-    public class Position
-    {
 
-        public static List<PictureBox> boxlist = new List<PictureBox>();
-    }
     static class Program
     {
         /// <summary>

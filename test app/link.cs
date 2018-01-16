@@ -14,14 +14,12 @@ namespace test_app
 
         int xpos = Form1.xpos;
         int ypos = Form1.ypos;
-        public static int start = 0;
-        List<PictureBox> list = Position.boxlist;
-        public PictureBox Pendingimage;
+
 
         public Link(PictureBox box1, PictureBox box2, PictureBox box3, PictureBox box4, PictureBox box5, PictureBox box6, PictureBox box7, PictureBox box8, PictureBox box9)
         {
 
-            List<PictureBox> boxlist = new List<PictureBox>();
+           
             if (xpos == 0 && ypos == 0)
             {
                 box1.Image = test_app.Properties.Resources.link;

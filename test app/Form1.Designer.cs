@@ -28,7 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.left = new System.Windows.Forms.Button();
+            this.right = new System.Windows.Forms.Button();
+            this.down = new System.Windows.Forms.Button();
+            this.up = new System.Windows.Forms.Button();
+            this.reset = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.box1 = new System.Windows.Forms.PictureBox();
+            this.box0 = new System.Windows.Forms.PictureBox();
+            this.box2 = new System.Windows.Forms.PictureBox();
+            this.box3 = new System.Windows.Forms.PictureBox();
+            this.box5 = new System.Windows.Forms.PictureBox();
+            this.box4 = new System.Windows.Forms.PictureBox();
+            this.rightbox = new System.Windows.Forms.PictureBox();
+            this.leftbox = new System.Windows.Forms.PictureBox();
+            this.downbox = new System.Windows.Forms.PictureBox();
+            this.upbox = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -39,13 +54,17 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.left = new System.Windows.Forms.Button();
-            this.right = new System.Windows.Forms.Button();
-            this.down = new System.Windows.Forms.Button();
-            this.up = new System.Windows.Forms.Button();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.reset = new System.Windows.Forms.Button();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.box1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rightbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leftbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upbox)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -56,8 +75,170 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
+            // 
+            // left
+            // 
+            this.left.Location = new System.Drawing.Point(690, 392);
+            this.left.Margin = new System.Windows.Forms.Padding(2);
+            this.left.Name = "left";
+            this.left.Size = new System.Drawing.Size(152, 110);
+            this.left.TabIndex = 1;
+            this.left.Text = "left";
+            this.left.UseVisualStyleBackColor = true;
+            this.left.Click += new System.EventHandler(this.left_Click);
+            // 
+            // right
+            // 
+            this.right.Location = new System.Drawing.Point(996, 392);
+            this.right.Margin = new System.Windows.Forms.Padding(2);
+            this.right.Name = "right";
+            this.right.Size = new System.Drawing.Size(152, 110);
+            this.right.TabIndex = 2;
+            this.right.Text = "right";
+            this.right.UseVisualStyleBackColor = true;
+            this.right.Click += new System.EventHandler(this.right_Click);
+            // 
+            // down
+            // 
+            this.down.Location = new System.Drawing.Point(840, 448);
+            this.down.Margin = new System.Windows.Forms.Padding(2);
+            this.down.Name = "down";
+            this.down.Size = new System.Drawing.Size(152, 110);
+            this.down.TabIndex = 3;
+            this.down.Text = "down";
+            this.down.UseVisualStyleBackColor = true;
+            this.down.Click += new System.EventHandler(this.down_Click);
+            // 
+            // up
+            // 
+            this.up.Location = new System.Drawing.Point(840, 333);
+            this.up.Margin = new System.Windows.Forms.Padding(2);
+            this.up.Name = "up";
+            this.up.Size = new System.Drawing.Size(152, 110);
+            this.up.TabIndex = 4;
+            this.up.Text = "up";
+            this.up.UseVisualStyleBackColor = true;
+            this.up.Click += new System.EventHandler(this.up_Click);
+            // 
+            // reset
+            // 
+            this.reset.Location = new System.Drawing.Point(820, 624);
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(186, 97);
+            this.reset.TabIndex = 18;
+            this.reset.Text = "reset";
+            this.reset.UseVisualStyleBackColor = true;
+            this.reset.Click += new System.EventHandler(this.reset_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel2.Controls.Add(this.box3);
+            this.panel2.Controls.Add(this.box4);
+            this.panel2.Controls.Add(this.box1);
+            this.panel2.Controls.Add(this.box0);
+            this.panel2.Controls.Add(this.box5);
+            this.panel2.Controls.Add(this.box2);
+            this.panel2.Location = new System.Drawing.Point(626, 58);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1147, 121);
+            this.panel2.TabIndex = 19;
+            this.panel2.DragDrop += new System.Windows.Forms.DragEventHandler(this.panel2_DragDrop);
+            // 
+            // box1
+            // 
+            this.box1.Location = new System.Drawing.Point(106, 2);
+            this.box1.Margin = new System.Windows.Forms.Padding(2);
+            this.box1.Name = "box1";
+            this.box1.Size = new System.Drawing.Size(100, 100);
+            this.box1.TabIndex = 18;
+            this.box1.TabStop = false;
+            // 
+            // box0
+            // 
+            this.box0.Location = new System.Drawing.Point(2, 2);
+            this.box0.Margin = new System.Windows.Forms.Padding(2);
+            this.box0.Name = "box0";
+            this.box0.Size = new System.Drawing.Size(100, 100);
+            this.box0.TabIndex = 17;
+            this.box0.TabStop = false;
+            // 
+            // box2
+            // 
+            this.box2.Location = new System.Drawing.Point(210, 2);
+            this.box2.Margin = new System.Windows.Forms.Padding(2);
+            this.box2.Name = "box2";
+            this.box2.Size = new System.Drawing.Size(100, 100);
+            this.box2.TabIndex = 19;
+            this.box2.TabStop = false;
+            // 
+            // box3
+            // 
+            this.box3.Location = new System.Drawing.Point(314, 0);
+            this.box3.Margin = new System.Windows.Forms.Padding(2);
+            this.box3.Name = "box3";
+            this.box3.Size = new System.Drawing.Size(100, 100);
+            this.box3.TabIndex = 20;
+            this.box3.TabStop = false;
+            // 
+            // box5
+            // 
+            this.box5.Location = new System.Drawing.Point(522, 2);
+            this.box5.Margin = new System.Windows.Forms.Padding(2);
+            this.box5.Name = "box5";
+            this.box5.Size = new System.Drawing.Size(100, 100);
+            this.box5.TabIndex = 22;
+            this.box5.TabStop = false;
+            // 
+            // box4
+            // 
+            this.box4.Location = new System.Drawing.Point(418, 0);
+            this.box4.Margin = new System.Windows.Forms.Padding(2);
+            this.box4.Name = "box4";
+            this.box4.Size = new System.Drawing.Size(100, 100);
+            this.box4.TabIndex = 21;
+            this.box4.TabStop = false;
+            // 
+            // rightbox
+            // 
+            this.rightbox.Image = global::test_app.Properties.Resources.rightbutton;
+            this.rightbox.Location = new System.Drawing.Point(1353, 601);
+            this.rightbox.Name = "rightbox";
+            this.rightbox.Size = new System.Drawing.Size(100, 50);
+            this.rightbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.rightbox.TabIndex = 23;
+            this.rightbox.TabStop = false;
+            this.rightbox.DragEnter += new System.Windows.Forms.DragEventHandler(this.rightbox_DragEnter);
+            this.rightbox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rightbox_MouseDown);
+            // 
+            // leftbox
+            // 
+            this.leftbox.Image = global::test_app.Properties.Resources.liftbutton;
+            this.leftbox.InitialImage = null;
+            this.leftbox.Location = new System.Drawing.Point(1353, 545);
+            this.leftbox.Name = "leftbox";
+            this.leftbox.Size = new System.Drawing.Size(100, 50);
+            this.leftbox.TabIndex = 22;
+            this.leftbox.TabStop = false;
+            // 
+            // downbox
+            // 
+            this.downbox.Image = global::test_app.Properties.Resources.download;
+            this.downbox.Location = new System.Drawing.Point(1353, 489);
+            this.downbox.Name = "downbox";
+            this.downbox.Size = new System.Drawing.Size(100, 50);
+            this.downbox.TabIndex = 21;
+            this.downbox.TabStop = false;
+            // 
+            // upbox
+            // 
+            this.upbox.Image = global::test_app.Properties.Resources.upbutton;
+            this.upbox.Location = new System.Drawing.Point(1353, 433);
+            this.upbox.Name = "upbox";
+            this.upbox.Size = new System.Drawing.Size(100, 50);
+            this.upbox.TabIndex = 20;
+            this.upbox.TabStop = false;
             // 
             // panel1
             // 
@@ -158,76 +339,17 @@
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
             // 
-            // left
-            // 
-            this.left.Location = new System.Drawing.Point(690, 392);
-            this.left.Margin = new System.Windows.Forms.Padding(2);
-            this.left.Name = "left";
-            this.left.Size = new System.Drawing.Size(152, 110);
-            this.left.TabIndex = 1;
-            this.left.Text = "left";
-            this.left.UseVisualStyleBackColor = true;
-            this.left.Click += new System.EventHandler(this.left_Click);
-            // 
-            // right
-            // 
-            this.right.Location = new System.Drawing.Point(996, 392);
-            this.right.Margin = new System.Windows.Forms.Padding(2);
-            this.right.Name = "right";
-            this.right.Size = new System.Drawing.Size(152, 110);
-            this.right.TabIndex = 2;
-            this.right.Text = "right";
-            this.right.UseVisualStyleBackColor = true;
-            this.right.Click += new System.EventHandler(this.right_Click);
-            // 
-            // down
-            // 
-            this.down.Location = new System.Drawing.Point(840, 448);
-            this.down.Margin = new System.Windows.Forms.Padding(2);
-            this.down.Name = "down";
-            this.down.Size = new System.Drawing.Size(152, 110);
-            this.down.TabIndex = 3;
-            this.down.Text = "down";
-            this.down.UseVisualStyleBackColor = true;
-            this.down.Click += new System.EventHandler(this.down_Click);
-            // 
-            // up
-            // 
-            this.up.Location = new System.Drawing.Point(840, 333);
-            this.up.Margin = new System.Windows.Forms.Padding(2);
-            this.up.Name = "up";
-            this.up.Size = new System.Drawing.Size(152, 110);
-            this.up.TabIndex = 4;
-            this.up.Text = "up";
-            this.up.UseVisualStyleBackColor = true;
-            this.up.Click += new System.EventHandler(this.up_Click);
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Location = new System.Drawing.Point(842, 117);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(150, 114);
-            this.pictureBox10.TabIndex = 17;
-            this.pictureBox10.TabStop = false;
-            // 
-            // reset
-            // 
-            this.reset.Location = new System.Drawing.Point(1361, 210);
-            this.reset.Name = "reset";
-            this.reset.Size = new System.Drawing.Size(186, 97);
-            this.reset.TabIndex = 18;
-            this.reset.Text = "reset";
-            this.reset.UseVisualStyleBackColor = true;
-            this.reset.Click += new System.EventHandler(this.reset_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1879, 1055);
+            this.Controls.Add(this.rightbox);
+            this.Controls.Add(this.leftbox);
+            this.Controls.Add(this.downbox);
+            this.Controls.Add(this.upbox);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.reset);
-            this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.up);
             this.Controls.Add(this.down);
             this.Controls.Add(this.right);
@@ -237,6 +359,18 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.box1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rightbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leftbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upbox)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -247,7 +381,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -268,9 +401,18 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox box0;
         private System.Windows.Forms.Button reset;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox upbox;
+        private System.Windows.Forms.PictureBox downbox;
+        private System.Windows.Forms.PictureBox leftbox;
+        private System.Windows.Forms.PictureBox rightbox;
+        private System.Windows.Forms.PictureBox box5;
+        private System.Windows.Forms.PictureBox box4;
+        private System.Windows.Forms.PictureBox box3;
+        private System.Windows.Forms.PictureBox box2;
+        private System.Windows.Forms.PictureBox box1;
     }
 }
 
