@@ -202,6 +202,11 @@
             this.box2.TabIndex = 19;
             this.box2.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 300;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // start_button
             // 
             this.start_button.Image = global::test_app.Properties.Resources._0a8a31a07ea245d;

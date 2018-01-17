@@ -178,43 +178,7 @@ namespace test_app
 
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 5; i++)
-            {
-
-                if (list[i] == null)
-                {
-                    break;
-                }
-                
-                
-                else
-                {
-                    if (list[i].Image == rightbox.Image)
-                    {
-                        xpos++;
-                        Thread.Sleep(300);
-                    }
-                    if (list[i].Image == leftbox.Image)
-                    {
-                        xpos--;
-                        Thread.Sleep(300);
-                    }
-                    if (list[i].Image == upbox.Image)
-                    {
-                        ypos++;
-                        Thread.Sleep(300);
-                    }
-                    if (list[i].Image == downbox.Image)
-                    {
-                        ypos--;
-                        Thread.Sleep(300);
-
-                    }
-                }
-                move();
-
-
-            }
+            timer1.Start();
         }
 
         private void reset_button_Click(object sender, EventArgs e)
@@ -227,8 +191,42 @@ namespace test_app
             ypos = 1;
             move();
         }
+        int i = 0;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+         
+            if (list[i].Image  == null)
+            {
+                timer1.Stop();
+                i = 0;
+            }
 
 
+            else
+            {
+                if (list[i].Image == rightbox.Image)
+                {
+                    xpos++;
+                }
+                if (list[i].Image == leftbox.Image)
+                {
+                    xpos--;
+                }
+                if (list[i].Image == upbox.Image)
+                {
+                    ypos++;
+                }
+                if (list[i].Image == downbox.Image)
+                {
+                    ypos--;
+
+                }
+            }
+            move();
+            i++;
+
+        }
     }
 }
 
