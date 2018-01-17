@@ -68,25 +68,55 @@ namespace test_app
 
         public void range()
         {
+
+
             if (xpos > 1)
             {
                 xpos = -1;
                 ypos = 1;
+                timer1.Stop();
+                foreach (PictureBox p in panel2.Controls)
+                {
+                    p.Image = null;
+                }
+                move();
+                i = 0;
             }
             if (xpos < -1)
             {
                 xpos = -1;
                 ypos = 1;
+                timer1.Stop();
+                foreach (PictureBox p in panel2.Controls)
+                {
+                    p.Image = null;
+                }
+                move();
+                i = 0;
             }
             if (ypos > 1)
             {
                 ypos = 1;
                 xpos = -1;
+                timer1.Stop();
+                foreach (PictureBox p in panel2.Controls)
+                {
+                    p.Image = null;
+                }
+                move();
+                i = 0;
             }
             if (ypos < -1)
             {
                 ypos = 1;
                 xpos = -1;
+                timer1.Stop();
+                foreach (PictureBox p in panel2.Controls)
+                {
+                    p.Image = null;
+                }
+                move();
+                i = 0;
             }
         }
 
@@ -190,6 +220,7 @@ namespace test_app
             xpos = -1;
             ypos = 1;
             move();
+            i = 0;
         }
         int i = 0;
 
@@ -224,6 +255,7 @@ namespace test_app
                 }
             }
             move();
+            range();
             i++;
 
         }
