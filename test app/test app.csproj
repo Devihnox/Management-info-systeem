@@ -84,6 +84,11 @@
     <None Include="Resources\learning-the-grid-method.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\arrow up 2.0.png" />
+    <None Include="Resources\arrow down 2.0.png" />
+    <None Include="Resources\arrow right 2.0.png" />
+    <None Include="Resources\arrow left 2.0.png" />
+    <Content Include="Resources\white-black-grid-minimalist-duvet-covers.jpg" />
     <None Include="Resources\download.png" />
     <None Include="Resources\arrow right.png" />
     <None Include="Resources\arrow right1.png" />
