@@ -229,5 +229,15 @@ namespace test_app.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white_black_grid_minimalist_duvet_covers {
+            get {
+                object obj = ResourceManager.GetObject("white-black-grid-minimalist-duvet-covers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
