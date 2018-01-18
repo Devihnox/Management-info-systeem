@@ -88,6 +88,15 @@
     <None Include="Resources\arrow down 2.0.png" />
     <None Include="Resources\arrow right 2.0.png" />
     <None Include="Resources\arrow left 2.0.png" />
+    <None Include="Resources\loop button 2.0.png" />
+    <None Include="Resources\down1.png" />
+    <None Include="Resources\down2.png" />
+    <None Include="Resources\left1.png" />
+    <None Include="Resources\left2.png" />
+    <None Include="Resources\right1.png" />
+    <None Include="Resources\right2.png" />
+    <None Include="Resources\up1.png" />
+    <None Include="Resources\up2.png" />
     <Content Include="Resources\white-black-grid-minimalist-duvet-covers.jpg" />
     <None Include="Resources\download.png" />
     <None Include="Resources\arrow right.png" />

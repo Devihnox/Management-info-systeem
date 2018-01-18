@@ -11,840 +11,995 @@ namespace test_app
 
     public class Link
     {
-
+        List<PictureBox> list = Form1.listlink;
         int xpos = Form1.xpos;
         int ypos = Form1.ypos;
+        bool right = Form1.right;
+        bool left = Form1.left;
+        bool up = Form1.up;
+        bool down = Form1.down;
+        int box = 73;
+        int x = Form1.movement;
+
 
 
         public Link(PictureBox box1, PictureBox box2, PictureBox box3, PictureBox box4, PictureBox box5, PictureBox box6, PictureBox box7, PictureBox box8, PictureBox box9, PictureBox box10, PictureBox box11, PictureBox box12, PictureBox box13, PictureBox box14, PictureBox box15, PictureBox box16, PictureBox box17, PictureBox box18, PictureBox box19, PictureBox box20, PictureBox box21, PictureBox box22, PictureBox box23, PictureBox box24, PictureBox box25, PictureBox box26, PictureBox box27, PictureBox box28, PictureBox box29, PictureBox box30, PictureBox box31, PictureBox box32, PictureBox box33, PictureBox box34, PictureBox box35, PictureBox box36, PictureBox box37, PictureBox box38, PictureBox box39, PictureBox box40, PictureBox box41, PictureBox box42, PictureBox box43, PictureBox box44, PictureBox box45, PictureBox box46, PictureBox box47, PictureBox box48, PictureBox box49, PictureBox box50, PictureBox box51, PictureBox box52, PictureBox box53, PictureBox box54, PictureBox box55, PictureBox box56, PictureBox box57, PictureBox box58, PictureBox box59, PictureBox box60, PictureBox box61, PictureBox box62, PictureBox box63, PictureBox box64, PictureBox box65, PictureBox box66, PictureBox box67, PictureBox box68, PictureBox box69, PictureBox box70, PictureBox box71, PictureBox box72, PictureBox box73, PictureBox box74, PictureBox box75, PictureBox box76, PictureBox box77, PictureBox box78, PictureBox box79, PictureBox box80, PictureBox box81, PictureBox box82, PictureBox box83, PictureBox box84, PictureBox box85, PictureBox box86, PictureBox box87, PictureBox box88, PictureBox box89, PictureBox box90, PictureBox box91, PictureBox box92, PictureBox box93, PictureBox box94, PictureBox box95, PictureBox box96, PictureBox box97, PictureBox box98, PictureBox box99, PictureBox box100, PictureBox box101, PictureBox box102, PictureBox box103, PictureBox box104, PictureBox box105, PictureBox box106, PictureBox box107, PictureBox box108, PictureBox box109, PictureBox box110, PictureBox box111, PictureBox box112, PictureBox box113, PictureBox box114, PictureBox box115, PictureBox box116, PictureBox box117, PictureBox box118, PictureBox box119, PictureBox box120, PictureBox box121, PictureBox box122, PictureBox box123, PictureBox box124, PictureBox box125, PictureBox box126, PictureBox box127, PictureBox box128, PictureBox box129, PictureBox box130, PictureBox box131, PictureBox box132, PictureBox box133, PictureBox box134, PictureBox box135, PictureBox box136, PictureBox box137, PictureBox box138, PictureBox box139, PictureBox box140, PictureBox box141, PictureBox box142, PictureBox box143, PictureBox box144)
-            {
+        {
+
 
             if (xpos == 0)
             {
                 if (ypos == 0)
                 {
-                    box1.Image = test_app.Properties.Resources.link;
+                    box = 0;
+                    animation();
                     box1.SizeMode = PictureBoxSizeMode.Zoom;
 
                 }
                 if (ypos == 1)
                 {
-                    box7.Image = test_app.Properties.Resources.link;
+                    box = 6;
+                    animation();
                     box7.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box2.Image = test_app.Properties.Resources.link;
+                    box = 1;
+                    animation();
                     box2.SizeMode = PictureBoxSizeMode.Zoom;
 
                 }
                 if (ypos == 2)
                 {
-                    box69.Image = test_app.Properties.Resources.link;
+                    box = 68;
+                    animation();
                     box69.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box68.Image = test_app.Properties.Resources.link;
+                    box = 67;
+                    animation();
                     box68.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box67.Image = test_app.Properties.Resources.link;
+                    box = 66;
+                    animation();
                     box67.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box66.Image = test_app.Properties.Resources.link;
+
+                    box = 65;
+                    animation();
                     box66.SizeMode = PictureBoxSizeMode.Zoom;
+
                 }
                 if (ypos == -2)
                 {
-                    box104.Image = test_app.Properties.Resources.link;
+                    box = 103;
+                    animation();
                     box104.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box103.Image = test_app.Properties.Resources.link;
+                    box = 102;
+                    animation();
                     box103.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box102.Image = test_app.Properties.Resources.link;
+                    box = 101;
+                    animation();
                     box102.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box101.Image = test_app.Properties.Resources.link;
+                    box = 100;
+                    animation();
                     box101.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -6)
                 {
-                    box100.Image = test_app.Properties.Resources.link;
+                    box = 99;
+                    animation();
                     box100.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
 
-            if (xpos == 1)
+            else if (xpos == 1)
             {
                 if (ypos == 0)
                 {
-                    box9.Image = test_app.Properties.Resources.link;
+                    box = 8;
+                    animation();
                     box9.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 1)
                 {
-                    box6.Image = test_app.Properties.Resources.link;
+                    box = 5;
+                    animation();
                     box6.SizeMode = PictureBoxSizeMode.Zoom;
 
                 }
                 if (ypos == -1)
                 {
-                    box3.Image = test_app.Properties.Resources.link;
+                    box = 2;
+                    animation();
                     box3.SizeMode = PictureBoxSizeMode.Zoom;
 
                 }
                 if (ypos == 2)
                 {
-                    box73.Image = test_app.Properties.Resources.link;
+                    box = 72;
+                    animation();
                     box73.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box72.Image = test_app.Properties.Resources.link;
+                    box = 71;
+                    animation();
                     box72.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box71.Image = test_app.Properties.Resources.link;
+                    box = 70;
+                    animation();
                     box71.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box70.Image = test_app.Properties.Resources.link;
+                    box = 69;
+                    animation();
                     box70.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box109.Image = test_app.Properties.Resources.link;
+                    box = 108;
+                    animation();
                     box109.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box108.Image = test_app.Properties.Resources.link;
+                    box = 107;
+                    animation();
                     box108.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box107.Image = test_app.Properties.Resources.link;
+                    box = 106;
+                    animation();
                     box107.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box106.Image = test_app.Properties.Resources.link;
+                    box = 105;
+                    animation();
                     box106.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -6)
                 {
-                    box105.Image = test_app.Properties.Resources.link;
+                    box = 104;
+                    animation();
                     box105.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
 
-            if (xpos == 2)
+            else if (xpos == 2)
             {
                 if (ypos == 1)
                 {
-                    box10.Image = test_app.Properties.Resources.link;
+                    box = 9;
+                    animation();
                     box10.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 0)
                 {
-                    box11.Image = test_app.Properties.Resources.link;
+                    box = 10;
+                    animation();
                     box11.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box11.Image = test_app.Properties.Resources.link;
-                    box11.SizeMode = PictureBoxSizeMode.Zoom;
+                    box = 11;
+                    animation();
+                    box12.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 2)
                 {
-                    box49.Image = test_app.Properties.Resources.link;
+                    box = 48;
+                    animation();
                     box49.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box50.Image = test_app.Properties.Resources.link;
+                    box = 49;
+                    animation();
                     box50.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box51.Image = test_app.Properties.Resources.link;
+                    box = 50;
+                    animation();
                     box51.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box52.Image = test_app.Properties.Resources.link;
+                    box = 51;
+                    animation();
                     box52.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box53.Image = test_app.Properties.Resources.link;
+                    box = 52;
+                    animation();
                     box53.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box53.Image = test_app.Properties.Resources.link;
-                    box53.SizeMode = PictureBoxSizeMode.Zoom;
+                    box = 53;
+                    animation();
+                    box54.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box54.Image = test_app.Properties.Resources.link;
-                    box54.SizeMode = PictureBoxSizeMode.Zoom;
+                    box = 54;
+                    animation();
+                    box55.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box55.Image = test_app.Properties.Resources.link;
-                    box55.SizeMode = PictureBoxSizeMode.Zoom;
+                    box = 55;
+                    animation();
+                    box56.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -6)
                 {
-                    box56.Image = test_app.Properties.Resources.link;
-                    box56.SizeMode = PictureBoxSizeMode.Zoom;
+                    box = 56;
+                    animation();
+                    box57.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
 
-            if (xpos == 3)
+            else if (xpos == 3)
             {
                 if (ypos == 1)
                 {
-                    box13.Image = test_app.Properties.Resources.link;
+                    box = 12;
+                    animation();
                     box13.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 0)
                 {
-                    box14.Image = test_app.Properties.Resources.link;
+                    box = 13;
+                    animation();
                     box14.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box15.Image = test_app.Properties.Resources.link;
+                    box = 14;
+                    animation();
                     box15.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 2)
                 {
-                    box40.Image = test_app.Properties.Resources.link;
+                    box = 39;
+                    animation();
                     box40.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box41.Image = test_app.Properties.Resources.link;
+                    box = 40;
+                    animation();
                     box41.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box42.Image = test_app.Properties.Resources.link;
+                    box = 41;
+                    animation();
                     box42.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box43.Image = test_app.Properties.Resources.link;
+                    box = 42;
+                    animation();
                     box43.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box44.Image = test_app.Properties.Resources.link;
+                    box = 43;
+                    animation();
                     box44.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box45.Image = test_app.Properties.Resources.link;
+                    box = 44;
+                    animation();
                     box45.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box46.Image = test_app.Properties.Resources.link;
+                    box = 45;
+                    animation();
                     box46.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box47.Image = test_app.Properties.Resources.link;
+                    box = 46;
+                    animation();
                     box47.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -6)
                 {
-                    box48.Image = test_app.Properties.Resources.link;
+                    box = 47;
+                    animation();
                     box48.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
 
-            if (xpos == 4)
+            else if (xpos == 4)
             {
                 if (ypos == 1)
                 {
-                    box16.Image = test_app.Properties.Resources.link;
+                    box = 15;
+                    animation();
                     box16.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 0)
                 {
-                    box17.Image = test_app.Properties.Resources.link;
+                    box = 16;
+                    animation();
                     box17.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box18.Image = test_app.Properties.Resources.link;
+                    box = 17;
+                    animation();
                     box18.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 2)
                 {
-                    box31.Image = test_app.Properties.Resources.link;
+                    box = 30;
+                    animation();
                     box31.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box32.Image = test_app.Properties.Resources.link;
+                    box = 31;
+                    animation();
                     box32.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box33.Image = test_app.Properties.Resources.link;
+                    box = 32;
+                    animation();
                     box33.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box34.Image = test_app.Properties.Resources.link;
+                    box = 33;
+                    animation();
                     box34.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box35.Image = test_app.Properties.Resources.link;
+                    box = 34;
+                    animation();
                     box35.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box36.Image = test_app.Properties.Resources.link;
+                    box = 35;
+                    animation();
                     box36.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box37.Image = test_app.Properties.Resources.link;
+                    box = 36;
+                    animation();
                     box37.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box38.Image = test_app.Properties.Resources.link;
+                    box = 37;
+                    animation();
                     box38.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -6)
                 {
-                    box39.Image = test_app.Properties.Resources.link;
+                    box = 38;
+                    animation();
                     box39.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
 
-            if (xpos == 5)
+            else if (xpos == 5)
             {
                 if (ypos == 1)
                 {
-                    box19.Image = test_app.Properties.Resources.link;
+                    box = 18;
+                    animation();
                     box19.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 0)
                 {
-                    box20.Image = test_app.Properties.Resources.link;
+                    box = 19;
+                    animation();
                     box20.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box21.Image = test_app.Properties.Resources.link;
+                    box = 20;
+                    animation();
                     box21.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 2)
                 {
-                    box22.Image = test_app.Properties.Resources.link;
+                    box = 21;
+                    animation();
                     box22.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box23.Image = test_app.Properties.Resources.link;
+                    box = 22;
+                    animation();
                     box23.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box24.Image = test_app.Properties.Resources.link;
+                    box = 23;
+                    animation();
                     box24.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box25.Image = test_app.Properties.Resources.link;
+                    box = 24;
+                    animation();
                     box25.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box26.Image = test_app.Properties.Resources.link;
+                    box = 25;
+                    animation();
                     box26.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box27.Image = test_app.Properties.Resources.link;
+                    box = 26;
+                    animation();
                     box27.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box28.Image = test_app.Properties.Resources.link;
+                    box = 27;
+                    animation();
                     box28.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box29.Image = test_app.Properties.Resources.link;
+                    box = 28;
+                    animation();
                     box29.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -6)
                 {
-                    box30.Image = test_app.Properties.Resources.link;
+                    box = 29;
+                    animation();
                     box30.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
 
-            if (xpos == 0)
-            {
-                if (ypos == 2)
-                {
-                    box22.Image = test_app.Properties.Resources.link;
-                    box22.SizeMode = PictureBoxSizeMode.Zoom;
-                }
-                if (ypos == 3)
-                {
-                    box23.Image = test_app.Properties.Resources.link;
-                    box23.SizeMode = PictureBoxSizeMode.Zoom;
-                }
-                if (ypos == 4)
-                {
-                    box24.Image = test_app.Properties.Resources.link;
-                    box24.SizeMode = PictureBoxSizeMode.Zoom;
-                }
-                if (ypos == 5)
-                {
-                    box25.Image = test_app.Properties.Resources.link;
-                    box25.SizeMode = PictureBoxSizeMode.Zoom;
-                }
-                if (ypos == -2)
-                {
-                    box26.Image = test_app.Properties.Resources.link;
-                    box26.SizeMode = PictureBoxSizeMode.Zoom;
-                }
-                if (ypos == -3)
-                {
-                    box27.Image = test_app.Properties.Resources.link;
-                    box27.SizeMode = PictureBoxSizeMode.Zoom;
-                }
-                if (ypos == -4)
-                {
-                    box28.Image = test_app.Properties.Resources.link;
-                    box28.SizeMode = PictureBoxSizeMode.Zoom;
-                }
-                if (ypos == -5)
-                {
-                    box29.Image = test_app.Properties.Resources.link;
-                    box29.SizeMode = PictureBoxSizeMode.Zoom;
-                }
-                if (ypos == -6)
-                {
-                    box30.Image = test_app.Properties.Resources.link;
-                    box30.SizeMode = PictureBoxSizeMode.Zoom;
-                }
-            }
-
-            if (xpos == -1)
+            else if (xpos == -1)
             {
                 if (ypos == 0)
                 {
-                    box4.Image = test_app.Properties.Resources.link;
+                    box = 3;
+                    animation();
                     box4.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box5.Image = test_app.Properties.Resources.link;
+                    box = 4;
+                    animation();
                     box5.SizeMode = PictureBoxSizeMode.Zoom;
 
                 }
                 if (ypos == 1)
                 {
-                    box8.Image = test_app.Properties.Resources.link;
+                    box = 7;
+                    animation();
                     box8.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 2)
                 {
-                    box65.Image = test_app.Properties.Resources.link;
+                    box = 64;
+                    animation();
                     box65.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box64.Image = test_app.Properties.Resources.link;
+                    box = 63;
+                    animation();
                     box64.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box63.Image = test_app.Properties.Resources.link;
+                    box = 62;
+                    animation();
                     box63.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box62.Image = test_app.Properties.Resources.link;
+                    box = 61;
+                    animation();
                     box62.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box99.Image = test_app.Properties.Resources.link;
+                    box = 98;
+                    animation();
                     box99.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box98.Image = test_app.Properties.Resources.link;
+                    box = 97;
+                    animation();
                     box98.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box97.Image = test_app.Properties.Resources.link;
+                    box = 96;
+                    animation();
                     box97.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box96.Image = test_app.Properties.Resources.link;
+                    box = 95;
+                    animation();
                     box96.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -6)
                 {
-                    box95.Image = test_app.Properties.Resources.link;
+                    box = 94;
+                    animation();
                     box95.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
 
-            if (xpos == -2)
+            else if (xpos == -2)
             {
                 if (ypos == 0)
                 {
-                    box131.Image = test_app.Properties.Resources.link;
+                    box = 130;
+                    animation();
                     box131.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box130.Image = test_app.Properties.Resources.link;
+                    box = 129;
+                    animation();
                     box130.SizeMode = PictureBoxSizeMode.Zoom;
 
                 }
                 if (ypos == 1)
                 {
-                    box132.Image = test_app.Properties.Resources.link;
+                    box = 131;
+                    animation();
                     box132.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 2)
                 {
-                    box61.Image = test_app.Properties.Resources.link;
+                    box = 60;
+                    animation();
                     box61.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box60.Image = test_app.Properties.Resources.link;
+                    box = 59;
+                    animation();
                     box60.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box59.Image = test_app.Properties.Resources.link;
+                    box = 58;
+                    animation();
                     box59.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box58.Image = test_app.Properties.Resources.link;
+                    box = 57;
+                    animation();
                     box58.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box94.Image = test_app.Properties.Resources.link;
+                    box = 93;
+                    animation();
                     box94.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box93.Image = test_app.Properties.Resources.link;
+                    box = 92;
+                    animation();
                     box93.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box92.Image = test_app.Properties.Resources.link;
+                    box = 91;
+                    animation();
                     box92.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box91.Image = test_app.Properties.Resources.link;
+                    box = 90;
+                    animation();
                     box91.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -6)
                 {
-                    box90.Image = test_app.Properties.Resources.link;
+                    box = 89;
+                    animation();
                     box90.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
 
-            if (xpos == -3)
+            else if (xpos == -3)
             {
                 if (ypos == 0)
                 {
-                    box134.Image = test_app.Properties.Resources.link;
+                    box = 133;
+                    animation();
                     box134.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box133.Image = test_app.Properties.Resources.link;
+                    box = 132;
+                    animation();
                     box133.SizeMode = PictureBoxSizeMode.Zoom;
 
                 }
                 if (ypos == 1)
                 {
-                    box135.Image = test_app.Properties.Resources.link;
+                    box = 134;
+                    animation();
                     box135.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 2)
                 {
-                    box89.Image = test_app.Properties.Resources.link;
+                    box = 88;
+                    animation();
                     box89.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box88.Image = test_app.Properties.Resources.link;
+                    box = 87;
+                    animation();
                     box88.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box87.Image = test_app.Properties.Resources.link;
+                    box = 86;
+                    animation();
                     box87.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box86.Image = test_app.Properties.Resources.link;
+                    box = 85;
+                    animation();
                     box86.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box129.Image = test_app.Properties.Resources.link;
+                    box = 128;
+                    animation();
                     box129.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box128.Image = test_app.Properties.Resources.link;
+                    box = 127;
+                    animation();
                     box128.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box127.Image = test_app.Properties.Resources.link;
+                    box = 126;
+                    animation();
                     box127.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box126.Image = test_app.Properties.Resources.link;
+                    box = 125;
+                    animation();
                     box126.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -6)
                 {
-                    box125.Image = test_app.Properties.Resources.link;
+                    box = 124;
+                    animation();
                     box125.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
 
-            if (xpos == -4)
+            else if (xpos == -4)
             {
                 if (ypos == 0)
                 {
-                    box144.Image = test_app.Properties.Resources.link;
+                    box = 143;
+                    animation();
                     box144.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box141.Image = test_app.Properties.Resources.link;
+                    box = 140;
+                    animation();
                     box141.SizeMode = PictureBoxSizeMode.Zoom;
-
                 }
                 if (ypos == 1)
                 {
-                    box138.Image = test_app.Properties.Resources.link;
+                    box = 137;
+                    animation();
                     box138.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 2)
                 {
-                    box85.Image = test_app.Properties.Resources.link;
+                    box = 84;
+                    animation();
                     box85.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box84.Image = test_app.Properties.Resources.link;
+                    box = 83;
+                    animation();
                     box84.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box83.Image = test_app.Properties.Resources.link;
+                    box = 82;
+                    animation();
                     box83.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box82.Image = test_app.Properties.Resources.link;
+                    box = 81;
+                    animation();
                     box82.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box124.Image = test_app.Properties.Resources.link;
+                    box = 123;
+                    animation();
                     box124.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box123.Image = test_app.Properties.Resources.link;
+                    box = 122;
+                    animation();
                     box123.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box122.Image = test_app.Properties.Resources.link;
+                    box = 121;
+                    animation();
                     box122.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box121.Image = test_app.Properties.Resources.link;
+                    box = 120;
+                    animation();
                     box121.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -6)
                 {
-                    box120.Image = test_app.Properties.Resources.link;
+                    box = 119;
+                    animation();
                     box120.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
 
-            if (xpos == -5)
+            else if (xpos == -5)
             {
                 if (ypos == 0)
                 {
-                    box143.Image = test_app.Properties.Resources.link;
+                    box = 142;
+                    animation();
                     box143.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box142.Image = test_app.Properties.Resources.link;
+                    box = 141;
+                    animation();
                     box142.SizeMode = PictureBoxSizeMode.Zoom;
 
                 }
                 if (ypos == 1)
                 {
-                    box137.Image = test_app.Properties.Resources.link;
+                    box = 136;
+                    animation();
                     box137.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 2)
                 {
-                    box81.Image = test_app.Properties.Resources.link;
+                    box = 80;
+                    animation();
                     box81.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box80.Image = test_app.Properties.Resources.link;
+                    box = 79;
+                    animation();
                     box80.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box79.Image = test_app.Properties.Resources.link;
+                    box = 78;
+                    animation();
                     box79.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box78.Image = test_app.Properties.Resources.link;
+                    box = 77;
+                    animation();
                     box78.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box119.Image = test_app.Properties.Resources.link;
+                    box = 118;
+                    animation();
                     box119.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box118.Image = test_app.Properties.Resources.link;
+                    box = 117;
+                    animation();
                     box118.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box117.Image = test_app.Properties.Resources.link;
+                    box = 116;
+                    animation();
                     box117.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box116.Image = test_app.Properties.Resources.link;
+                    box = 115;
+                    animation();
                     box116.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -6)
                 {
-                    box115.Image = test_app.Properties.Resources.link;
+                    box = 114;
+                    animation();
                     box115.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
 
-            if (xpos == -6)
+            else if (xpos == -6)
             {
                 if (ypos == 0)
                 {
-                    box140.Image = test_app.Properties.Resources.link;
+                    box = 139;
+                    animation();
                     box140.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box139.Image = test_app.Properties.Resources.link;
+                    box = 138;
+                    animation();
                     box139.SizeMode = PictureBoxSizeMode.Zoom;
 
                 }
                 if (ypos == 1)
                 {
-                    box136.Image = test_app.Properties.Resources.link;
+                    box = 135;
+                    animation();
                     box136.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 2)
                 {
-                    box77.Image = test_app.Properties.Resources.link;
+                    box = 76;
+                    animation();
                     box77.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box76.Image = test_app.Properties.Resources.link;
+                    box = 75;
+                    animation();
                     box76.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box75.Image = test_app.Properties.Resources.link;
+                    box = 74;
+                    animation();
                     box75.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box74.Image = test_app.Properties.Resources.link;
+                    box = 73;
+                    animation();
                     box74.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box114.Image = test_app.Properties.Resources.link;
+                    box = 113;
+                    animation();
                     box114.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box113.Image = test_app.Properties.Resources.link;
+                    box = 112;
+                    animation();
                     box113.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box112.Image = test_app.Properties.Resources.link;
+                    box = 111;
+                    animation();
                     box112.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box111.Image = test_app.Properties.Resources.link;
+                    box = 110;
+                    animation();
                     box111.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -6)
                 {
-                    box110.Image = test_app.Properties.Resources.link;
+                    box = 109;
+                    animation();
                     box110.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
         }
+
+        public void animation()
+        {
+            if (right == true)
+            {
+                if (x == 0)
+                {
+                    list[box].Image = test_app.Properties.Resources.right1;
+                }
+                else
+                {
+                    list[box].Image = test_app.Properties.Resources.right2;
+                }
+            }
+            if (left == true)
+            {
+                if (x == 0)
+                {
+                    list[box].Image = test_app.Properties.Resources.left1;
+                }
+                else
+                {
+                    list[box].Image = test_app.Properties.Resources.left2;
+                }
+            }
+            if (up == true)
+            {
+                if (x == 0)
+                {
+                    list[box].Image = test_app.Properties.Resources.up1;
+                }
+                else
+                {
+                    list[box].Image = test_app.Properties.Resources.up2;
+                }
+            }
+            if (down == true)
+            {
+                if (x == 0)
+                {
+                    list[box].Image = test_app.Properties.Resources.down1;
+                }
+                else
+                {
+                    list[box].Image = test_app.Properties.Resources.down2;
+                }
+            }
+        }
+
     }
 }
+
+
