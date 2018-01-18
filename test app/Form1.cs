@@ -15,6 +15,7 @@ namespace test_app
     {
 
         List<PictureBox> list = new List<PictureBox>();
+        List<PictureBox> List2 = new List<PictureBox>();
 
         public static int ypos = 1;
         public static int xpos = -1;
@@ -23,6 +24,7 @@ namespace test_app
         {
             InitializeComponent();
             move();
+  
         }
 
         #region move and range
@@ -154,30 +156,19 @@ namespace test_app
             PictureBox pb = (PictureBox)sender;
             pb.DoDragDrop(pb.Image, DragDropEffects.Copy);
         }
-        public int x = 0;
-        public int y = 0;
         private void Form1_Load(object sender, EventArgs e)
         {
-            foreach(PictureBox pb in panel2.Controls)
-            {
-                x++;
-            }
-            foreach(PictureBox pb in panel3.Controls)
-            {
-                y++;
-            }
 
             Control[] Ray;
-            for (int b = 0; b < y; y++)
+            for (int b = 0; b < 11 ; b++)
             {
                 Ray = this.Controls.Find("loopbox" + b.ToString(), true);
                 if (Ray.Length > 0 && Ray[0] is PictureBox)
                 {
-                    list.Add((PictureBox)Ray[0]);
+                    List2.Add((PictureBox)Ray[0]);
                 }
             }
-
-            for (int i = 0; i < x; i++)
+            for (int i = 0; i < 8; i++)
             {
                 Ray = this.Controls.Find("Box" + i.ToString(), true);
                 if (Ray.Length > 0 && Ray[0] is PictureBox)
@@ -194,7 +185,7 @@ namespace test_app
         private void panel2_DragDrop(object sender, DragEventArgs e)
         {
             
-            for (int i = 0; i < y; i++)
+            for (int i = 0; i < list.Count ; i++)
             {
                 if (list[i].Image == null)
                 {
@@ -206,16 +197,17 @@ namespace test_app
         }
         private void panel3_DragDrop(object sender, DragEventArgs e)
         {
-            for (int i = 0; i < x; i++)
+            for (int b = 0; b < List2.Count; b++)
             {
-                if (list[i].Image == null)
+                if (List2[b].Image == null)
                 {
-                    list[i].Image = (Bitmap)e.Data.GetData(typeof(Bitmap));
+                    List2[b].Image = (Bitmap)e.Data.GetData(typeof(Bitmap));
                     break;
                 }
 
             }
         }
+        
         private void panel2_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(typeof(Bitmap)))
@@ -238,6 +230,10 @@ namespace test_app
         private void reset_button_Click(object sender, EventArgs e)
         {
             foreach (PictureBox p in panel2.Controls)
+            {
+                p.Image = null;
+            }
+            foreach ( PictureBox p in panel3.Controls)
             {
                 p.Image = null;
             }
