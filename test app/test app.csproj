@@ -97,6 +97,7 @@
     <None Include="Resources\right2.png" />
     <None Include="Resources\up1.png" />
     <None Include="Resources\up2.png" />
+    <None Include="Resources\staan.png" />
     <Content Include="Resources\white-black-grid-minimalist-duvet-covers.jpg" />
     <None Include="Resources\download.png" />
     <None Include="Resources\arrow right.png" />
