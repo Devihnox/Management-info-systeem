@@ -12,8 +12,6 @@ namespace test_app
     public class Link
     {
         List<PictureBox> list = Form1.listlink;
-        int xpos = Form1.xpos;
-        int ypos = Form1.ypos;
         bool right = Form1.right;
         bool left = Form1.left;
         bool up = Form1.up;
@@ -24,7 +22,7 @@ namespace test_app
 
 
 
-        public Link(PictureBox box1, PictureBox box2, PictureBox box3, PictureBox box4, PictureBox box5, PictureBox box6, PictureBox box7, PictureBox box8, PictureBox box9, PictureBox box10, PictureBox box11, PictureBox box12, PictureBox box13, PictureBox box14, PictureBox box15, PictureBox box16, PictureBox box17, PictureBox box18, PictureBox box19, PictureBox box20, PictureBox box21, PictureBox box22, PictureBox box23, PictureBox box24, PictureBox box25, PictureBox box26, PictureBox box27, PictureBox box28, PictureBox box29, PictureBox box30, PictureBox box31, PictureBox box32, PictureBox box33, PictureBox box34, PictureBox box35, PictureBox box36, PictureBox box37, PictureBox box38, PictureBox box39, PictureBox box40, PictureBox box41, PictureBox box42, PictureBox box43, PictureBox box44, PictureBox box45, PictureBox box46, PictureBox box47, PictureBox box48, PictureBox box49, PictureBox box50, PictureBox box51, PictureBox box52, PictureBox box53, PictureBox box54, PictureBox box55, PictureBox box56, PictureBox box57, PictureBox box58, PictureBox box59, PictureBox box60, PictureBox box61, PictureBox box62, PictureBox box63, PictureBox box64, PictureBox box65, PictureBox box66, PictureBox box67, PictureBox box68, PictureBox box69, PictureBox box70, PictureBox box71, PictureBox box72, PictureBox box73, PictureBox box74, PictureBox box75, PictureBox box76, PictureBox box77, PictureBox box78, PictureBox box79, PictureBox box80, PictureBox box81, PictureBox box82, PictureBox box83, PictureBox box84, PictureBox box85, PictureBox box86, PictureBox box87, PictureBox box88, PictureBox box89, PictureBox box90, PictureBox box91, PictureBox box92, PictureBox box93, PictureBox box94, PictureBox box95, PictureBox box96, PictureBox box97, PictureBox box98, PictureBox box99, PictureBox box100, PictureBox box101, PictureBox box102, PictureBox box103, PictureBox box104, PictureBox box105, PictureBox box106, PictureBox box107, PictureBox box108, PictureBox box109, PictureBox box110, PictureBox box111, PictureBox box112, PictureBox box113, PictureBox box114, PictureBox box115, PictureBox box116, PictureBox box117, PictureBox box118, PictureBox box119, PictureBox box120, PictureBox box121, PictureBox box122, PictureBox box123, PictureBox box124, PictureBox box125, PictureBox box126, PictureBox box127, PictureBox box128, PictureBox box129, PictureBox box130, PictureBox box131, PictureBox box132, PictureBox box133, PictureBox box134, PictureBox box135, PictureBox box136, PictureBox box137, PictureBox box138, PictureBox box139, PictureBox box140, PictureBox box141, PictureBox box142, PictureBox box143, PictureBox box144)
+        public Link(PictureBox box1, PictureBox box2, PictureBox box3, PictureBox box4, PictureBox box5, PictureBox box6, PictureBox box7, PictureBox box8, PictureBox box9, PictureBox box10, PictureBox box11, PictureBox box12, PictureBox box13, PictureBox box14, PictureBox box15, PictureBox box16, PictureBox box17, PictureBox box18, PictureBox box19, PictureBox box20, PictureBox box21, PictureBox box22, PictureBox box23, PictureBox box24, PictureBox box25, PictureBox box26, PictureBox box27, PictureBox box28, PictureBox box29, PictureBox box30, PictureBox box31, PictureBox box32, PictureBox box33, PictureBox box34, PictureBox box35, PictureBox box36, PictureBox box37, PictureBox box38, PictureBox box39, PictureBox box40, PictureBox box41, PictureBox box42, PictureBox box43, PictureBox box44, PictureBox box45, PictureBox box46, PictureBox box47, PictureBox box48, PictureBox box49, PictureBox box50, PictureBox box51, PictureBox box52, PictureBox box53, PictureBox box54, PictureBox box55, PictureBox box56, PictureBox box57, PictureBox box58, PictureBox box59, PictureBox box60, PictureBox box61, PictureBox box62, PictureBox box63, PictureBox box64, PictureBox box65, PictureBox box66, PictureBox box67, PictureBox box68, PictureBox box69, PictureBox box70, PictureBox box71, PictureBox box72, PictureBox box73, PictureBox box74, PictureBox box75, PictureBox box76, PictureBox box77, PictureBox box78, PictureBox box79, PictureBox box80, PictureBox box81, PictureBox box82, PictureBox box83, PictureBox box84, PictureBox box85, PictureBox box86, PictureBox box87, PictureBox box88, PictureBox box89, PictureBox box90, PictureBox box91, PictureBox box92, PictureBox box93, PictureBox box94, PictureBox box95, PictureBox box96, PictureBox box97, PictureBox box98, PictureBox box99, PictureBox box100, PictureBox box101, PictureBox box102, PictureBox box103, PictureBox box104, PictureBox box105, PictureBox box106, PictureBox box107, PictureBox box108, PictureBox box109, PictureBox box110, PictureBox box111, PictureBox box112, PictureBox box113, PictureBox box114, PictureBox box115, PictureBox box116, PictureBox box117, PictureBox box118, PictureBox box119, PictureBox box120, PictureBox box121, PictureBox box122, PictureBox box123, PictureBox box124, PictureBox box125, PictureBox box126, PictureBox box127, PictureBox box128, PictureBox box129, PictureBox box130, PictureBox box131, PictureBox box132, PictureBox box133, PictureBox box134, PictureBox box135, PictureBox box136, PictureBox box137, PictureBox box138, PictureBox box139, PictureBox box140, PictureBox box141, PictureBox box142, PictureBox box143, PictureBox box144, Label label1, int xpos, int ypos)
         {
             list[box].Image = null;
 
@@ -32,7 +30,9 @@ namespace test_app
             {
                 if (ypos == 0)
                 {
-                    box = 0;
+                    //box = 0;
+                    label1.Text = "You cant go here";
+                    ypos = 1;
                     animation();
                     box1.SizeMode = PictureBoxSizeMode.Zoom;
 
@@ -52,13 +52,31 @@ namespace test_app
                 }
                 if (ypos == 2)
                 {
-                    box = 68;
+                    //box = 68;
+                    label1.Text = "You cant go here";
+                    if(up == true)
+                    {
+                        ypos = 1;
+                    }
+                    else
+                    {
+                        xpos = 1;
+                    }
                     animation();
                     box69.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box = 67;
+                    //box = 67;
+                    label1.Text = "You cant go here";
+                    if ( down == true)
+                    {
+                        ypos = 4;
+                    }
+                    else
+                    {
+                        xpos = 1;
+                    }
                     animation();
                     box68.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -70,8 +88,9 @@ namespace test_app
                 }
                 if (ypos == 5)
                 {
-
-                    box = 65;
+                    //box = 65;
+                    label1.Text = "You cant go here";
+                    ypos = 4;
                     animation();
                     box66.SizeMode = PictureBoxSizeMode.Zoom;
 
@@ -84,7 +103,15 @@ namespace test_app
                 }
                 if (ypos == -3)
                 {
-                    box = 102;
+                    //box = 102;
+                    if(up == true)
+                    {
+                        ypos = -4;
+                    }
+                    else
+                    {
+                        xpos = -1;
+                    }
                     animation();
                     box103.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -96,7 +123,9 @@ namespace test_app
                 }
                 if (ypos == -5)
                 {
-                    box = 100;
+                    //box = 100;
+                    label1.Text = "You cant go here";
+                    ypos = -4;
                     animation();
                     box101.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -112,7 +141,9 @@ namespace test_app
             {
                 if (ypos == 0)
                 {
-                    box = 8;
+                    //box = 8;
+                    label1.Text = "You cant go here";
+                    ypos = 1;
                     animation();
                     box9.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -150,19 +181,25 @@ namespace test_app
                 }
                 if (ypos == 5)
                 {
-                    box = 69;
+                    //box = 69;
+                    label1.Text = "You cant go here";
+                    ypos = 4;
                     animation();
                     box70.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box = 108;
+                    //box = 108;
+                    label1.Text = "You cant go here";
+                    ypos = -3;
                     animation();
                     box109.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box = 107;
+                    //box = 107;
+                    label1.Text = "You cant go here";
+                    ypos = -4;
                     animation();
                     box108.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -174,7 +211,9 @@ namespace test_app
                 }
                 if (ypos == -5)
                 {
-                    box = 105;
+                    //box = 105;
+                    label1.Text = "You cant go here";
+                    ypos = -4;
                     animation();
                     box106.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -196,13 +235,24 @@ namespace test_app
                 }
                 if (ypos == 0)
                 {
-                    box = 10;
+                    //box = 10;
+                    label1.Text = "You cant go here";
+                    ypos = 1;
                     animation();
                     box11.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box = 11;
+                    //box = 11;
+                    label1.Text = "You cant go here";
+                    if(down == true)
+                    {
+                        ypos = 2;
+                    }
+                    else
+                    {
+                        xpos = 1;
+                    }
                     animation();
                     box12.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -214,31 +264,48 @@ namespace test_app
                 }
                 if (ypos == 3)
                 {
-                    box = 49;
+                    //box = 49;
+                    label1.Text = "You cant go here";
+                    xpos = 1;
                     animation();
                     box50.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box = 50;
+                    //box = 50;
+                    label1.Text = "You cant go here";
+                    xpos = 1;
                     animation();
                     box51.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box = 51;
+                    //box = 51;
+                    label1.Text = "You cant go here";
+                    ypos = 4;
                     animation();
                     box52.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box = 52;
+                    //box = 52;
+                    label1.Text = "You cant go here";
+                    xpos = 3;
                     animation();
                     box53.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box = 53;
+                    //box = 53;
+                    label1.Text = "You cant go here";
+                    if(up == true)
+                    {
+                        ypos = -4;
+                    }
+                    else
+                    {
+                        xpos = 3;
+                    }
                     animation();
                     box54.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -250,7 +317,9 @@ namespace test_app
                 }
                 if (ypos == -5)
                 {
-                    box = 55;
+                    //box = 55;
+                    label1.Text = "You cant go here";
+                    ypos = -4;
                     animation();
                     box56.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -266,19 +335,32 @@ namespace test_app
             {
                 if (ypos == 1)
                 {
-                    box = 12;
+                    //box = 12;
+                    label1.Text = "You cant go here";
+                    ypos = 2;
                     animation();
                     box13.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 0)
                 {
-                    box = 13;
+                    //box = 13;
+                    label1.Text = "You cant go here";
+                    xpos = 4;
                     animation();
                     box14.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box = 14;
+                    //box = 14;
+                    label1.Text = "You cant go here";
+                    if (up == true)
+                    {
+                        ypos = -2;
+                    }
+                    else
+                    {
+                        xpos = 4;
+                    }
                     animation();
                     box15.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -290,13 +372,17 @@ namespace test_app
                 }
                 if (ypos == 3)
                 {
-                    box = 40;
+                    //box = 40;
+                    label1.Text = "You cant go here";
+                    ypos = 2;
                     animation();
                     box41.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 4)
                 {
-                    box = 41;
+                    //box = 41;
+                    label1.Text = "You cant go here";
+                    xpos = 2;
                     animation();
                     box42.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -308,7 +394,9 @@ namespace test_app
                 }
                 if (ypos == -2)
                 {
-                    box = 43;
+                    //box = 43;
+                    label1.Text = "You cant go here";
+                    xpos = 4;
                     animation();
                     box44.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -326,7 +414,9 @@ namespace test_app
                 }
                 if (ypos == -5)
                 {
-                    box = 46;
+                    //box = 46;
+                    label1.Text = "You cant go here";
+                    ypos = 4;
                     animation();
                     box47.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -342,7 +432,20 @@ namespace test_app
             {
                 if (ypos == 1)
                 {
-                    box = 15;
+                    //box = 15;
+                    label1.Text = "You cant go here";
+                    if(down == true)
+                    {
+                        ypos = 2;
+                    }
+                    else if(up == true)
+                    {
+                        ypos = 0;
+                    }
+                    else
+                    {
+                        xpos = 5;
+                    }
                     animation();
                     box16.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -366,7 +469,16 @@ namespace test_app
                 }
                 if (ypos == 3)
                 {
-                    box = 31;
+                    //box = 31;
+                    label1.Text = "You cant go here";
+                    if(up == true)
+                    {
+                        ypos = 2;
+                    }
+                    else
+                    {
+                        xpos = 5;
+                    }
                     animation();
                     box32.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -390,13 +502,24 @@ namespace test_app
                 }
                 if (ypos == -3)
                 {
-                    box = 35;
+                    //box = 35;
+                    label1.Text = "You cant go here";
+                    if(down == true)
+                    {
+                        ypos = -2;
+                    }
+                    else
+                    {
+                        xpos = 3;
+                    }
                     animation();
                     box36.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box = 36;
+                    //box = 36;
+                    label1.Text = "You cant go here";
+                    xpos = 3;
                     animation();
                     box37.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -424,13 +547,24 @@ namespace test_app
                 }
                 if (ypos == 0)
                 {
-                    box = 19;
+                    //box = 19;
+                    label1.Text = "You cant go here";
+                    if(down == true)
+                    {
+                        ypos = 1;
+                    }
+                    else
+                    {
+                        xpos = 4;
+                    }
                     animation();
                     box20.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box = 20;
+                    //box = 20;
+                    label1.Text = "You cant go here";
+                    xpos = 4;
                     animation();
                     box21.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -448,19 +582,25 @@ namespace test_app
                 }
                 if (ypos == 4)
                 {
-                    box = 23;
+                    //box = 23;
+                    label1.Text = "You cant go here";
+                    ypos = 3;
                     animation();
                     box24.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 5)
                 {
-                    box = 24;
+                    //box = 24;
+                    label1.Text = "You cant go here";
+                    ypos = 4;
                     animation();
                     box25.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box = 25;
+                    //box = 25;
+                    label1.Text = "You cant go here";
+                    xpos = 4;
                     animation();
                     box26.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -494,7 +634,9 @@ namespace test_app
             {
                 if (ypos == 0)
                 {
-                    box = 3;
+                    //box = 3;
+                    label1.Text = "You cant go here";
+                    ypos = 1;
                     animation();
                     box4.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -513,13 +655,17 @@ namespace test_app
                 }
                 if (ypos == 2)
                 {
-                    box = 64;
+                    //box = 64;
+                    label1.Text = "You cant go here";
+                    ypos = 1;
                     animation();
                     box65.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box = 63;
+                    //box = 63;
+                    label1.Text = "You cant go here";
+                    ypos = 4;
                     animation();
                     box64.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -531,13 +677,17 @@ namespace test_app
                 }
                 if (ypos == 5)
                 {
-                    box = 61;
+                    //box = 61;
+                    label1.Text = "You cant go here";
+                    ypos = -4;
                     animation();
                     box62.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box = 98;
+                    //box = 98;
+                    label1.Text = "You cant go here";
+                    ypos = -3;
                     animation();
                     box99.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -555,7 +705,9 @@ namespace test_app
                 }
                 if (ypos == -5)
                 {
-                    box = 95;
+                    //box = 95;
+                    label1.Text = "You cant go here";
+                    ypos = -4;
                     animation();
                     box96.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -571,13 +723,24 @@ namespace test_app
             {
                 if (ypos == 0)
                 {
-                    box = 130;
+                    //box = 130;
+                    label1.Text = "You cant go here";
+                    if (down == true)
+                    {
+                        ypos = 1;
+                    }
+                    else
+                    {
+                        xpos = -3;
+                    }
                     animation();
                     box131.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box = 129;
+                    //box = 129;
+                    label1.Text = "You cant go here";
+                    xpos = -3;
                     animation();
                     box130.SizeMode = PictureBoxSizeMode.Zoom;
 
@@ -590,13 +753,17 @@ namespace test_app
                 }
                 if (ypos == 2)
                 {
-                    box = 60;
+                    //box = 60;
+                    label1.Text = "You cant go here";
+                    ypos = 1;
                     animation();
                     box61.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box = 59;
+                    //box = 59;
+                    label1.Text = "You cant go here";
+                    ypos = 4;
                     animation();
                     box60.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -608,31 +775,67 @@ namespace test_app
                 }
                 if (ypos == 5)
                 {
-                    box = 57;
+                    //box = 57;
+                    label1.Text = "You cant go here";
+                    ypos = 4;
                     animation();
                     box58.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box = 93;
+                    //box = 93;
+                    label1.Text = "You cant go here";
+                    if(up == true)
+                    {
+                        ypos = -3;
+                    }
+                    else
+                    {
+                        xpos = -3;
+                    }
                     animation();
                     box94.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box = 92;
+                    if(up == true)
+                    {
+                        label1.Text = "You cant go here";
+                        ypos = -4;
+                    }
+                    else
+                    {
+                        box = 92;
+                    }
                     animation();
                     box93.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box = 91;
+                    if(down == true)
+                    {
+                        label1.Text = "You cant go here";
+                        ypos = -3;
+                    }
+                    else
+                    {
+                        box = 91;
+                    }
                     animation();
                     box92.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box = 90;
+                    //box = 90;
+                    label1.Text = "You cant go here";
+                    if(down == true)
+                    {
+                        ypos = -4;
+                    }
+                    else
+                    {
+                        xpos = -3;
+                    }
                     animation();
                     box91.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -667,13 +870,17 @@ namespace test_app
                 }
                 if (ypos == 2)
                 {
-                    box = 88;
+                    label1.Text = "You cant go here";
+                    //box = 88;
+                    ypos = 1;
                     animation();
                     box89.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box = 87;
+                    //box = 87;
+                    label1.Text = "You cant go here";
+                    ypos = 4;
                     animation();
                     box88.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -685,7 +892,9 @@ namespace test_app
                 }
                 if (ypos == 5)
                 {
-                    box = 85;
+                    //box = 85;
+                    label1.Text = "You cant go here";
+                    ypos = 4;
                     animation();
                     box86.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -697,19 +906,37 @@ namespace test_app
                 }
                 if (ypos == -3)
                 {
-                    box = 127;
+                    if (up == true)
+                    {
+                        label1.Text = "You cant go here";
+                        ypos = -4;
+                    }
+                    else
+                    {
+                        box = 127;
+                    }
                     animation();
                     box128.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box = 126;
+                    if (down == true)
+                    {
+                        label1.Text = "You cant go here";
+                        ypos = -3;
+                    }
+                    else
+                    {
+                        box = 126;
+                    }
                     animation();
                     box127.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -5)
                 {
-                    box = 125;
+                    //box = 125;
+                    label1.Text = "You cant go here";
+                    ypos = -4;
                     animation();
                     box126.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -725,13 +952,28 @@ namespace test_app
             {
                 if (ypos == 0)
                 {
-                    box = 143;
+                    label1.Text = "You cant go here";
+                    //box = 143;
+                    if (down == true)
+                    {
+                        ypos = 1;
+                    }
+                    else if(right == true)
+                    {
+                        xpos = -5;
+                    }
+                    else
+                    {
+                        xpos = -3;
+                    }
                     animation();
                     box144.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box = 140;
+                    //box = 140;
+                    label1.Text = "You cant go here";
+                    xpos = -3;
                     animation();
                     box141.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -743,13 +985,33 @@ namespace test_app
                 }
                 if (ypos == 2)
                 {
-                    box = 84;
+                    //box = 84;
+                    label1.Text = "You cant go here";
+                    if (up == true)
+                    {
+                        ypos = 1;
+                    }
+                    else
+                    {
+                        xpos = -5;
+                        ypos = 2;
+                    }
                     animation();
                     box85.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box = 83;
+                    //box = 83;
+                    label1.Text = "You cant go here";
+                    if (down == true)
+                    {
+                        ypos = 4;
+                    }
+                    else
+                    {
+                        xpos = -5;
+                        ypos = 3;
+                    }
                     animation();
                     box84.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -761,19 +1023,33 @@ namespace test_app
                 }
                 if (ypos == 5)
                 {
-                    box = 81;
+                    //box = 81;
+                    label1.Text = "You cant go here";
+                    
+                    ypos = 4;
                     animation();
                     box82.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box = 123;
+                    //box = 123;
+                    label1.Text = "You cant go here";
+                    xpos = -3;
                     animation();
                     box124.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box = 122;
+                    //box = 122;
+                    label1.Text = "You cant go here";
+                    if (up == true)
+                    {
+                        ypos = -4;
+                    }
+                    else
+                    {
+                        xpos = -3;
+                    }
                     animation();
                     box123.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -791,7 +1067,9 @@ namespace test_app
                 }
                 if (ypos == -6)
                 {
-                    box = 119;
+                    //box = 119;
+                    label1.Text = "You cant go here";
+                    ypos = -5;
                     animation();
                     box120.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -807,7 +1085,10 @@ namespace test_app
                 }
                 if (ypos == -1)
                 {
-                    box = 141;
+                    //box = 141;
+                    label1.Text = "You cant go here";
+                    xpos = 4;
+                    ypos = -1;
                     animation();
                     box142.SizeMode = PictureBoxSizeMode.Zoom;
 
@@ -838,25 +1119,44 @@ namespace test_app
                 }
                 if (ypos == 5)
                 {
-                    box = 77;
+                    //box = 77;
+                    label1.Text = "You cant go here";
+                    ypos = 4;
+                    ypos = 4;
                     animation();
                     box78.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box = 118;
+                    //box = 118;
+                    label1.Text = "You cant go here";
+                    xpos = 4;
+                    ypos = -1;
                     animation();
                     box119.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box = 117;
+                    //box = 117;
+                    label1.Text = "You cant go here";
+                    xpos = 4;
+                    
                     animation();
                     box118.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box = 116;
+                    //box = 116;
+                    label1.Text = "You cant go here";
+                    if (up == true)
+                    {
+                        ypos = -5;
+                    }
+                    else
+                    {
+                        ypos = -4;
+                        xpos = 3;
+                    }
                     animation();
                     box117.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -868,7 +1168,10 @@ namespace test_app
                 }
                 if (ypos == -6)
                 {
-                    box = 114;
+                    //box = 114;
+                    label1.Text = "You cant go here";
+                    xpos = 4;
+                    ypos = -5;
                     animation();
                     box115.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -878,32 +1181,54 @@ namespace test_app
             {
                 if (ypos == 0)
                 {
-                    box = 139;
+                    //box = 139;
+                    label1.Text = "You cant go here";
+                    xpos = -5;
+                    ypos = 0;
                     animation();
                     box140.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -1)
                 {
-                    box = 138;
+                    //box = 138;
+                    label1.Text = "You cant go here";
+                    xpos = -5;
+                    ypos = -1;
                     animation();
                     box139.SizeMode = PictureBoxSizeMode.Zoom;
 
                 }
                 if (ypos == 1)
                 {
-                    box = 135;
+                    //box = 135;
+                    label1.Text = "You cant go here";
+                    xpos = -5;
+                    ypos = 1;
                     animation();
                     box136.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 2)
                 {
-                    box = 76;
+                    //box = 76;
+                    label1.Text = "You cant go here";
+                    xpos = -5;
+                    ypos = 2;
                     animation();
                     box77.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == 3)
                 {
-                    box = 75;
+                    //box = 75;
+                    label1.Text = "You cant go here";
+                    if(down == true)
+                    {
+                        ypos = 4;
+                    }
+                    else
+                    {
+                        xpos = -5;
+                        ypos = 3;
+                    }
                     animation();
                     box76.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -915,25 +1240,36 @@ namespace test_app
                 }
                 if (ypos == 5)
                 {
-                    box = 73;
+                    //box = 73;
+                    label1.Text = "You cant go here";
                     animation();
+                    ypos = 4;
                     box74.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -2)
                 {
-                    box = 113;
+                    //box = 113;
+                    label1.Text = "You cant go here";
+                    xpos = 4;
+                    ypos = -2;
                     animation();
                     box114.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -3)
                 {
-                    box = 112;
+                    //box = 112;
+                    label1.Text = "You cant go here";
+                    xpos = 4;
+                    ypos = -3;
                     animation();
                     box113.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 if (ypos == -4)
                 {
-                    box = 111;
+                    //box = 111;
+                    label1.Text = "You cant go here";
+                    xpos = 4;
+                    ypos = -5;
                     animation();
                     box112.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -945,7 +1281,10 @@ namespace test_app
                 }
                 if (ypos == -6)
                 {
-                    box = 109;
+                    //box = 109;
+                    label1.Text = "You cant go here";
+                    xpos = 4;
+                    ypos = -5;
                     animation();
                     box110.SizeMode = PictureBoxSizeMode.Zoom;
                 }
