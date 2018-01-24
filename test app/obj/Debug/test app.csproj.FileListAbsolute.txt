@@ -11,7 +11,6 @@ C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\bin\D
 C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\bin\Debug\test app.exe
 C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\bin\Debug\test app.pdb
 C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\obj\Debug\test app.csprojResolveAssemblyReference.cache
-C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\obj\Debug\test_app.Form1.resources
 C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\obj\Debug\test_app.Properties.Resources.resources
 C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\obj\Debug\test app.csproj.GenerateResource.Cache
 C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\obj\Debug\test app.csproj.CoreCompileInputs.cache
@@ -23,3 +22,9 @@ C:\Users\Merlijn Kock\Documents\GitHub\Management-info-systeem\test app\obj\Debu
 C:\Users\Merlijn Kock\Documents\GitHub\Management-info-systeem\test app\bin\Debug\Interop.WMPLib.dll
 C:\Users\Merlijn Kock\Documents\GitHub\Management-info-systeem\test app\bin\Debug\AxInterop.WMPLib.dll
 C:\Users\Merlijn Kock\Documents\GitHub\Management-info-systeem\test app\obj\Debug\test_app.Game.resources
+C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\bin\Debug\Interop.WMPLib.dll
+C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\obj\Debug\Interop.WMPLib.dll
+C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\obj\Debug\test app.csproj.ResolveComReference.cache
+C:\Users\lhmbe\OneDrive\Documenten\GitHub\Management-info-systeem\test app\obj\Debug\test_app.Game.resources

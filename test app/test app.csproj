@@ -99,6 +99,9 @@
     <None Include="Resources\up2.png" />
     <None Include="Resources\staan.png" />
     <None Include="Resources\map.png" />
+    <None Include="Resources\map1.png" />
+    <None Include="Resources\je dikke moeder.png" />
+    <None Include="Resources\scroll.png" />
     <Content Include="Resources\white-black-grid-minimalist-duvet-covers.jpg" />
     <None Include="Resources\download.png" />
     <None Include="Resources\arrow right.png" />

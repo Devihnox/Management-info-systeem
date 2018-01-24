@@ -334,9 +334,16 @@ namespace test_app
             {
                 if (Game.Gamevar.ypos == 1)
                 {
-                    //box = 12;
                     label1.Text = "You cant go here";
-                    Game.Gamevar.ypos = 2;
+                    //box = 12;
+                    if (down == true)
+                    {
+                        Game.Gamevar.ypos = 2;
+                    }
+                    else
+                    {
+                        Game.Gamevar.xpos = 4;
+                    }
                     animation();
                     box13.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -393,9 +400,7 @@ namespace test_app
                 }
                 if (Game.Gamevar.ypos == -2)
                 {
-                    //box = 43;
-                    label1.Text = "You cant go here";
-                    Game.Gamevar.xpos = 4;
+                    box = 43;
                     animation();
                     box44.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -431,20 +436,7 @@ namespace test_app
             {
                 if (Game.Gamevar.ypos == 1)
                 {
-                    //box = 15;
-                    label1.Text = "You cant go here";
-                    if(down == true)
-                    {
-                        Game.Gamevar.ypos = 2;
-                    }
-                    else if(up == true)
-                    {
-                        Game.Gamevar.ypos = 0;
-                    }
-                    else
-                    {
-                        Game.Gamevar.xpos = 5;
-                    }
+                    box = 15;
                     animation();
                     box16.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -462,7 +454,15 @@ namespace test_app
                 }
                 if (Game.Gamevar.ypos == 2)
                 {
-                    box = 30;
+                    if (up == true)
+                    {
+                        label1.Text = "You cant go here";
+                        Game.Gamevar.ypos = 1;
+                    }
+                    else
+                    {
+                        box = 30;
+                    }
                     animation();
                     box31.SizeMode = PictureBoxSizeMode.Zoom;
                 }
@@ -678,7 +678,7 @@ namespace test_app
                 {
                     //box = 61;
                     label1.Text = "You cant go here";
-                    Game.Gamevar.ypos = -4;
+                    Game.Gamevar.ypos = 4;
                     animation();
                     box62.SizeMode = PictureBoxSizeMode.Zoom;
                 }

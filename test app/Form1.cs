@@ -40,16 +40,16 @@ namespace test_app
         {
             if (xpos < -6 || xpos > 5 || ypos >5 || ypos < -6)
             {
-                staan = true;
-                xpos = -6;
-                ypos = 5;
-                timer1.Stop();
-                foreach (PictureBox p in panel2.Controls)
+                label1.Text = "You cant go here";
+                if (right == true)
                 {
-                    p.Image = null;
+                    xpos = 5;
                 }
-                move();
-                i = 0;
+                if (left == true)
+                {
+                    xpos = -6;
+                }
+
             }
         }
 
@@ -142,6 +142,7 @@ namespace test_app
                     down = true;
                 }
             }
+            range();
             move();
             if(label1.Text == "You cant go here")
             {
@@ -160,7 +161,7 @@ namespace test_app
                     p.Image = null;
                 }
             }
-            range();
+            
             i++;
         }
         private void timer2_Tick(object sender, EventArgs e)
@@ -202,8 +203,10 @@ namespace test_app
                     down = true;
                 }
             }
-            move();
+
             range();
+            move();
+            
             i2++;
         }
         #endregion
@@ -295,6 +298,8 @@ namespace test_app
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            pictureBox145.SendToBack();
+            axWindowsMediaPlayer1.Visible = false;
             label1.Text = " ";
             Control[] Ray;
             for (int b = 1; b < 145; b++)
@@ -324,6 +329,7 @@ namespace test_app
             foreach (PictureBox bp in panel1.Controls)
             {
                 bp.BackColor = Color.Transparent;
+                bp.Size = new System.Drawing.Size(29, 25);
             }
             upbox.MouseDown += new MouseEventHandler(rightbox_MouseDown);
             downbox.MouseDown += new MouseEventHandler(rightbox_MouseDown);
@@ -334,6 +340,8 @@ namespace test_app
             panel3.DragEnter += new DragEventHandler(panel2_DragEnter);
             move();
         }
+
+
     }
 
 }

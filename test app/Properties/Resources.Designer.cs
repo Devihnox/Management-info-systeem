@@ -203,6 +203,16 @@ namespace test_app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap je_dikke_moeder {
+            get {
+                object obj = ResourceManager.GetObject("je dikke moeder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap learning_the_grid_method {
             get {
                 object obj = ResourceManager.GetObject("learning-the-grid-method", resourceCulture);
@@ -273,6 +283,16 @@ namespace test_app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap map1 {
+            get {
+                object obj = ResourceManager.GetObject("map1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap right1 {
             get {
                 object obj = ResourceManager.GetObject("right1", resourceCulture);
@@ -296,6 +316,16 @@ namespace test_app.Properties {
         internal static System.Drawing.Bitmap rightbutton {
             get {
                 object obj = ResourceManager.GetObject("rightbutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scroll {
+            get {
+                object obj = ResourceManager.GetObject("scroll", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
