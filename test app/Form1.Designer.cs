@@ -1,6 +1,6 @@
 ﻿namespace test_app
 {
-    partial class Form1
+    partial class Game
     {
         /// <summary>
         /// Required designer variable.
@@ -30,24 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.loopbox = new System.Windows.Forms.PictureBox();
-            this.loopbox0 = new System.Windows.Forms.PictureBox();
-            this.loopbox7 = new System.Windows.Forms.PictureBox();
-            this.loopbox6 = new System.Windows.Forms.PictureBox();
-            this.loopbox3 = new System.Windows.Forms.PictureBox();
-            this.loopbox4 = new System.Windows.Forms.PictureBox();
-            this.loopbox1 = new System.Windows.Forms.PictureBox();
-            this.loopbox5 = new System.Windows.Forms.PictureBox();
-            this.loopbox2 = new System.Windows.Forms.PictureBox();
-            this.start_button = new System.Windows.Forms.PictureBox();
-            this.reset_button = new System.Windows.Forms.PictureBox();
-            this.rightbox = new System.Windows.Forms.PictureBox();
-            this.leftbox = new System.Windows.Forms.PictureBox();
-            this.downbox = new System.Windows.Forms.PictureBox();
-            this.upbox = new System.Windows.Forms.PictureBox();
             this.box10 = new System.Windows.Forms.PictureBox();
             this.box9 = new System.Windows.Forms.PictureBox();
             this.box8 = new System.Windows.Forms.PictureBox();
@@ -59,6 +41,24 @@
             this.box0 = new System.Windows.Forms.PictureBox();
             this.box5 = new System.Windows.Forms.PictureBox();
             this.box2 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.loopbox0 = new System.Windows.Forms.PictureBox();
+            this.loopbox7 = new System.Windows.Forms.PictureBox();
+            this.loopbox6 = new System.Windows.Forms.PictureBox();
+            this.loopbox3 = new System.Windows.Forms.PictureBox();
+            this.loopbox4 = new System.Windows.Forms.PictureBox();
+            this.loopbox1 = new System.Windows.Forms.PictureBox();
+            this.loopbox5 = new System.Windows.Forms.PictureBox();
+            this.loopbox2 = new System.Windows.Forms.PictureBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.loopbox = new System.Windows.Forms.PictureBox();
+            this.start_button = new System.Windows.Forms.PictureBox();
+            this.reset_button = new System.Windows.Forms.PictureBox();
+            this.rightbox = new System.Windows.Forms.PictureBox();
+            this.leftbox = new System.Windows.Forms.PictureBox();
+            this.downbox = new System.Windows.Forms.PictureBox();
+            this.upbox = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox130 = new System.Windows.Forms.PictureBox();
             this.pictureBox110 = new System.Windows.Forms.PictureBox();
@@ -205,24 +205,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.start_button)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reset_button)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rightbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leftbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.downbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.upbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box8)).BeginInit();
@@ -234,6 +217,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.box0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box2)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.start_button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reset_button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rightbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leftbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upbox)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox130)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox110)).BeginInit();
@@ -403,198 +402,6 @@
             this.panel2.DragDrop += new System.Windows.Forms.DragEventHandler(this.panel2_DragDrop);
             this.panel2.DragEnter += new System.Windows.Forms.DragEventHandler(this.panel2_DragEnter);
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 200;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel3.Controls.Add(this.loopbox0);
-            this.panel3.Controls.Add(this.loopbox7);
-            this.panel3.Controls.Add(this.loopbox6);
-            this.panel3.Controls.Add(this.loopbox3);
-            this.panel3.Controls.Add(this.loopbox4);
-            this.panel3.Controls.Add(this.loopbox1);
-            this.panel3.Controls.Add(this.loopbox5);
-            this.panel3.Controls.Add(this.loopbox2);
-            this.panel3.Location = new System.Drawing.Point(1573, 545);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(833, 92);
-            this.panel3.TabIndex = 27;
-            this.panel3.DragDrop += new System.Windows.Forms.DragEventHandler(this.panel3_DragDrop);
-            // 
-            // timer2
-            // 
-            this.timer2.Interval = 300;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // loopbox
-            // 
-            this.loopbox.BackColor = System.Drawing.Color.Transparent;
-            this.loopbox.Image = global::test_app.Properties.Resources.loop_button_2_0;
-            this.loopbox.Location = new System.Drawing.Point(1465, 545);
-            this.loopbox.Margin = new System.Windows.Forms.Padding(4);
-            this.loopbox.Name = "loopbox";
-            this.loopbox.Size = new System.Drawing.Size(100, 92);
-            this.loopbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.loopbox.TabIndex = 28;
-            this.loopbox.TabStop = false;
-            // 
-            // loopbox0
-            // 
-            this.loopbox0.Location = new System.Drawing.Point(2, 0);
-            this.loopbox0.Margin = new System.Windows.Forms.Padding(2);
-            this.loopbox0.Name = "loopbox0";
-            this.loopbox0.Size = new System.Drawing.Size(100, 92);
-            this.loopbox0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.loopbox0.TabIndex = 27;
-            this.loopbox0.TabStop = false;
-            // 
-            // loopbox7
-            // 
-            this.loopbox7.Location = new System.Drawing.Point(730, 0);
-            this.loopbox7.Margin = new System.Windows.Forms.Padding(2);
-            this.loopbox7.Name = "loopbox7";
-            this.loopbox7.Size = new System.Drawing.Size(100, 92);
-            this.loopbox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.loopbox7.TabIndex = 26;
-            this.loopbox7.TabStop = false;
-            // 
-            // loopbox6
-            // 
-            this.loopbox6.Location = new System.Drawing.Point(626, 0);
-            this.loopbox6.Margin = new System.Windows.Forms.Padding(2);
-            this.loopbox6.Name = "loopbox6";
-            this.loopbox6.Size = new System.Drawing.Size(100, 92);
-            this.loopbox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.loopbox6.TabIndex = 23;
-            this.loopbox6.TabStop = false;
-            // 
-            // loopbox3
-            // 
-            this.loopbox3.Location = new System.Drawing.Point(314, 0);
-            this.loopbox3.Margin = new System.Windows.Forms.Padding(2);
-            this.loopbox3.Name = "loopbox3";
-            this.loopbox3.Size = new System.Drawing.Size(100, 92);
-            this.loopbox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.loopbox3.TabIndex = 20;
-            this.loopbox3.TabStop = false;
-            // 
-            // loopbox4
-            // 
-            this.loopbox4.Location = new System.Drawing.Point(418, 0);
-            this.loopbox4.Margin = new System.Windows.Forms.Padding(2);
-            this.loopbox4.Name = "loopbox4";
-            this.loopbox4.Size = new System.Drawing.Size(100, 92);
-            this.loopbox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.loopbox4.TabIndex = 21;
-            this.loopbox4.TabStop = false;
-            // 
-            // loopbox1
-            // 
-            this.loopbox1.Location = new System.Drawing.Point(106, 0);
-            this.loopbox1.Margin = new System.Windows.Forms.Padding(2);
-            this.loopbox1.Name = "loopbox1";
-            this.loopbox1.Size = new System.Drawing.Size(100, 92);
-            this.loopbox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.loopbox1.TabIndex = 18;
-            this.loopbox1.TabStop = false;
-            // 
-            // loopbox5
-            // 
-            this.loopbox5.Location = new System.Drawing.Point(522, 0);
-            this.loopbox5.Margin = new System.Windows.Forms.Padding(2);
-            this.loopbox5.Name = "loopbox5";
-            this.loopbox5.Size = new System.Drawing.Size(100, 92);
-            this.loopbox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.loopbox5.TabIndex = 22;
-            this.loopbox5.TabStop = false;
-            // 
-            // loopbox2
-            // 
-            this.loopbox2.Location = new System.Drawing.Point(210, 0);
-            this.loopbox2.Margin = new System.Windows.Forms.Padding(2);
-            this.loopbox2.Name = "loopbox2";
-            this.loopbox2.Size = new System.Drawing.Size(100, 92);
-            this.loopbox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.loopbox2.TabIndex = 19;
-            this.loopbox2.TabStop = false;
-            // 
-            // start_button
-            // 
-            this.start_button.Image = global::test_app.Properties.Resources._0a8a31a07ea245d;
-            this.start_button.Location = new System.Drawing.Point(159, 1233);
-            this.start_button.Margin = new System.Windows.Forms.Padding(6);
-            this.start_button.Name = "start_button";
-            this.start_button.Size = new System.Drawing.Size(265, 105);
-            this.start_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.start_button.TabIndex = 26;
-            this.start_button.TabStop = false;
-            this.start_button.Click += new System.EventHandler(this.pictureBox10_Click);
-            // 
-            // reset_button
-            // 
-            this.reset_button.Image = global::test_app.Properties.Resources._9318eb1afd34703;
-            this.reset_button.Location = new System.Drawing.Point(721, 1210);
-            this.reset_button.Margin = new System.Windows.Forms.Padding(6);
-            this.reset_button.Name = "reset_button";
-            this.reset_button.Size = new System.Drawing.Size(306, 128);
-            this.reset_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.reset_button.TabIndex = 25;
-            this.reset_button.TabStop = false;
-            this.reset_button.Click += new System.EventHandler(this.reset_button_Click);
-            // 
-            // rightbox
-            // 
-            this.rightbox.BackColor = System.Drawing.Color.Transparent;
-            this.rightbox.Image = global::test_app.Properties.Resources.arrow_right_2_0;
-            this.rightbox.Location = new System.Drawing.Point(1361, 545);
-            this.rightbox.Margin = new System.Windows.Forms.Padding(4);
-            this.rightbox.Name = "rightbox";
-            this.rightbox.Size = new System.Drawing.Size(100, 92);
-            this.rightbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.rightbox.TabIndex = 23;
-            this.rightbox.TabStop = false;
-            this.rightbox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rightbox_MouseDown);
-            // 
-            // leftbox
-            // 
-            this.leftbox.Image = global::test_app.Properties.Resources.arrow_left_2_0;
-            this.leftbox.InitialImage = null;
-            this.leftbox.Location = new System.Drawing.Point(1361, 645);
-            this.leftbox.Margin = new System.Windows.Forms.Padding(4);
-            this.leftbox.Name = "leftbox";
-            this.leftbox.Size = new System.Drawing.Size(100, 92);
-            this.leftbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.leftbox.TabIndex = 22;
-            this.leftbox.TabStop = false;
-            // 
-            // downbox
-            // 
-            this.downbox.Image = global::test_app.Properties.Resources.arrow_down_2_0;
-            this.downbox.Location = new System.Drawing.Point(1253, 645);
-            this.downbox.Margin = new System.Windows.Forms.Padding(4);
-            this.downbox.Name = "downbox";
-            this.downbox.Size = new System.Drawing.Size(100, 92);
-            this.downbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.downbox.TabIndex = 21;
-            this.downbox.TabStop = false;
-            // 
-            // upbox
-            // 
-            this.upbox.BackColor = System.Drawing.Color.Transparent;
-            this.upbox.Image = global::test_app.Properties.Resources.arrow_up_2_0;
-            this.upbox.Location = new System.Drawing.Point(1253, 545);
-            this.upbox.Margin = new System.Windows.Forms.Padding(4);
-            this.upbox.Name = "upbox";
-            this.upbox.Size = new System.Drawing.Size(100, 92);
-            this.upbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.upbox.TabIndex = 20;
-            this.upbox.TabStop = false;
-            // 
             // box10
             // 
             this.box10.Location = new System.Drawing.Point(1040, 0);
@@ -704,6 +511,198 @@
             this.box2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.box2.TabIndex = 19;
             this.box2.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel3.Controls.Add(this.loopbox0);
+            this.panel3.Controls.Add(this.loopbox7);
+            this.panel3.Controls.Add(this.loopbox6);
+            this.panel3.Controls.Add(this.loopbox3);
+            this.panel3.Controls.Add(this.loopbox4);
+            this.panel3.Controls.Add(this.loopbox1);
+            this.panel3.Controls.Add(this.loopbox5);
+            this.panel3.Controls.Add(this.loopbox2);
+            this.panel3.Location = new System.Drawing.Point(1573, 545);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(833, 92);
+            this.panel3.TabIndex = 27;
+            this.panel3.DragDrop += new System.Windows.Forms.DragEventHandler(this.panel3_DragDrop);
+            // 
+            // loopbox0
+            // 
+            this.loopbox0.Location = new System.Drawing.Point(2, 0);
+            this.loopbox0.Margin = new System.Windows.Forms.Padding(2);
+            this.loopbox0.Name = "loopbox0";
+            this.loopbox0.Size = new System.Drawing.Size(100, 92);
+            this.loopbox0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.loopbox0.TabIndex = 27;
+            this.loopbox0.TabStop = false;
+            // 
+            // loopbox7
+            // 
+            this.loopbox7.Location = new System.Drawing.Point(730, 0);
+            this.loopbox7.Margin = new System.Windows.Forms.Padding(2);
+            this.loopbox7.Name = "loopbox7";
+            this.loopbox7.Size = new System.Drawing.Size(100, 92);
+            this.loopbox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.loopbox7.TabIndex = 26;
+            this.loopbox7.TabStop = false;
+            // 
+            // loopbox6
+            // 
+            this.loopbox6.Location = new System.Drawing.Point(626, 0);
+            this.loopbox6.Margin = new System.Windows.Forms.Padding(2);
+            this.loopbox6.Name = "loopbox6";
+            this.loopbox6.Size = new System.Drawing.Size(100, 92);
+            this.loopbox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.loopbox6.TabIndex = 23;
+            this.loopbox6.TabStop = false;
+            // 
+            // loopbox3
+            // 
+            this.loopbox3.Location = new System.Drawing.Point(314, 0);
+            this.loopbox3.Margin = new System.Windows.Forms.Padding(2);
+            this.loopbox3.Name = "loopbox3";
+            this.loopbox3.Size = new System.Drawing.Size(100, 92);
+            this.loopbox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.loopbox3.TabIndex = 20;
+            this.loopbox3.TabStop = false;
+            // 
+            // loopbox4
+            // 
+            this.loopbox4.Location = new System.Drawing.Point(418, 0);
+            this.loopbox4.Margin = new System.Windows.Forms.Padding(2);
+            this.loopbox4.Name = "loopbox4";
+            this.loopbox4.Size = new System.Drawing.Size(100, 92);
+            this.loopbox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.loopbox4.TabIndex = 21;
+            this.loopbox4.TabStop = false;
+            // 
+            // loopbox1
+            // 
+            this.loopbox1.Location = new System.Drawing.Point(106, 0);
+            this.loopbox1.Margin = new System.Windows.Forms.Padding(2);
+            this.loopbox1.Name = "loopbox1";
+            this.loopbox1.Size = new System.Drawing.Size(100, 92);
+            this.loopbox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.loopbox1.TabIndex = 18;
+            this.loopbox1.TabStop = false;
+            // 
+            // loopbox5
+            // 
+            this.loopbox5.Location = new System.Drawing.Point(522, 0);
+            this.loopbox5.Margin = new System.Windows.Forms.Padding(2);
+            this.loopbox5.Name = "loopbox5";
+            this.loopbox5.Size = new System.Drawing.Size(100, 92);
+            this.loopbox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.loopbox5.TabIndex = 22;
+            this.loopbox5.TabStop = false;
+            // 
+            // loopbox2
+            // 
+            this.loopbox2.Location = new System.Drawing.Point(210, 0);
+            this.loopbox2.Margin = new System.Windows.Forms.Padding(2);
+            this.loopbox2.Name = "loopbox2";
+            this.loopbox2.Size = new System.Drawing.Size(100, 92);
+            this.loopbox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.loopbox2.TabIndex = 19;
+            this.loopbox2.TabStop = false;
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 300;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // loopbox
+            // 
+            this.loopbox.BackColor = System.Drawing.Color.Transparent;
+            this.loopbox.Image = global::test_app.Properties.Resources.loop_button_2_0;
+            this.loopbox.Location = new System.Drawing.Point(1465, 545);
+            this.loopbox.Margin = new System.Windows.Forms.Padding(4);
+            this.loopbox.Name = "loopbox";
+            this.loopbox.Size = new System.Drawing.Size(100, 92);
+            this.loopbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.loopbox.TabIndex = 28;
+            this.loopbox.TabStop = false;
+            // 
+            // start_button
+            // 
+            this.start_button.Image = global::test_app.Properties.Resources._0a8a31a07ea245d;
+            this.start_button.Location = new System.Drawing.Point(159, 1233);
+            this.start_button.Margin = new System.Windows.Forms.Padding(6);
+            this.start_button.Name = "start_button";
+            this.start_button.Size = new System.Drawing.Size(265, 105);
+            this.start_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.start_button.TabIndex = 26;
+            this.start_button.TabStop = false;
+            this.start_button.Click += new System.EventHandler(this.pictureBox10_Click);
+            // 
+            // reset_button
+            // 
+            this.reset_button.Image = global::test_app.Properties.Resources._9318eb1afd34703;
+            this.reset_button.Location = new System.Drawing.Point(721, 1210);
+            this.reset_button.Margin = new System.Windows.Forms.Padding(6);
+            this.reset_button.Name = "reset_button";
+            this.reset_button.Size = new System.Drawing.Size(306, 128);
+            this.reset_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.reset_button.TabIndex = 25;
+            this.reset_button.TabStop = false;
+            this.reset_button.Click += new System.EventHandler(this.reset_button_Click);
+            // 
+            // rightbox
+            // 
+            this.rightbox.BackColor = System.Drawing.Color.Transparent;
+            this.rightbox.Image = global::test_app.Properties.Resources.arrow_right_2_0;
+            this.rightbox.Location = new System.Drawing.Point(1361, 545);
+            this.rightbox.Margin = new System.Windows.Forms.Padding(4);
+            this.rightbox.Name = "rightbox";
+            this.rightbox.Size = new System.Drawing.Size(100, 92);
+            this.rightbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.rightbox.TabIndex = 23;
+            this.rightbox.TabStop = false;
+            this.rightbox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rightbox_MouseDown);
+            // 
+            // leftbox
+            // 
+            this.leftbox.Image = global::test_app.Properties.Resources.arrow_left_2_0;
+            this.leftbox.InitialImage = null;
+            this.leftbox.Location = new System.Drawing.Point(1361, 645);
+            this.leftbox.Margin = new System.Windows.Forms.Padding(4);
+            this.leftbox.Name = "leftbox";
+            this.leftbox.Size = new System.Drawing.Size(100, 92);
+            this.leftbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.leftbox.TabIndex = 22;
+            this.leftbox.TabStop = false;
+            // 
+            // downbox
+            // 
+            this.downbox.Image = global::test_app.Properties.Resources.arrow_down_2_0;
+            this.downbox.Location = new System.Drawing.Point(1253, 645);
+            this.downbox.Margin = new System.Windows.Forms.Padding(4);
+            this.downbox.Name = "downbox";
+            this.downbox.Size = new System.Drawing.Size(100, 92);
+            this.downbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.downbox.TabIndex = 21;
+            this.downbox.TabStop = false;
+            // 
+            // upbox
+            // 
+            this.upbox.BackColor = System.Drawing.Color.Transparent;
+            this.upbox.Image = global::test_app.Properties.Resources.arrow_up_2_0;
+            this.upbox.Location = new System.Drawing.Point(1253, 545);
+            this.upbox.Margin = new System.Windows.Forms.Padding(4);
+            this.upbox.Name = "upbox";
+            this.upbox.Size = new System.Drawing.Size(100, 92);
+            this.upbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.upbox.TabIndex = 20;
+            this.upbox.TabStop = false;
             // 
             // panel1
             // 
@@ -2165,24 +2164,13 @@
             this.label1.TabIndex = 29;
             this.label1.Text = "label1";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(559, 1167);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 45);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "label2";
-            // 
-            // Form1
+            // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(2470, 1425);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.loopbox);
             this.Controls.Add(this.panel3);
@@ -2196,27 +2184,12 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form1";
+            this.Name = "Game";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopbox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.start_button)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reset_button)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rightbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leftbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.downbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.upbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box8)).EndInit();
@@ -2228,6 +2201,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.box0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box2)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.start_button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reset_button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rightbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leftbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upbox)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox130)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox110)).EndInit();
@@ -2556,7 +2545,6 @@
         private System.Windows.Forms.PictureBox loopbox;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
     }
 }
 

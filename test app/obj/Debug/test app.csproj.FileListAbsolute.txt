@@ -22,4 +22,4 @@ C:\Users\Merlijn Kock\Documents\GitHub\Management-info-systeem\test app\obj\Debu
 C:\Users\Merlijn Kock\Documents\GitHub\Management-info-systeem\test app\obj\Debug\test app.csproj.ResolveComReference.cache
 C:\Users\Merlijn Kock\Documents\GitHub\Management-info-systeem\test app\bin\Debug\Interop.WMPLib.dll
 C:\Users\Merlijn Kock\Documents\GitHub\Management-info-systeem\test app\bin\Debug\AxInterop.WMPLib.dll
-C:\Users\Merlijn Kock\Documents\GitHub\Management-info-systeem\test app\obj\Debug\test_app.Form1.resources
+C:\Users\Merlijn Kock\Documents\GitHub\Management-info-systeem\test app\obj\Debug\test_app.Game.resources
